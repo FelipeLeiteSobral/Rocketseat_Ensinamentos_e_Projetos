@@ -1,0 +1,10 @@
+/*
+    # Iniciar Repositório           /               Clonar Repositório
+
+    git init                        /               git clone
+
+    1: Working directory ("git add" para passar os arquivos modificados para o passo 2)
+    2: Stage Area ("git commit" para passar os arquivos já preparados e atualizados para o passo 3)
+    3: Local Repository (Versão criada)
+
+*/

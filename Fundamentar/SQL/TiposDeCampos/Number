@@ -1,0 +1,9 @@
+/*
+    # Number
+
+    Campos são as informações presentes no cabeçalho
+
+    Eles precisam de uma configuração determinando seu tipo de dado (text, number...)
+
+    São apenas números (123...)
+*/

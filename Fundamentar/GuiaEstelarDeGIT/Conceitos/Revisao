@@ -1,0 +1,6 @@
+/*
+    # Informações pertinentes
+
+    git status (irá mostrar informações relevantes relacionadas ao GIT / o que está ou não no stage area)
+    git rm --cached NomeDoArquivo (irá remover do Stage Area o arquivo)
+*/

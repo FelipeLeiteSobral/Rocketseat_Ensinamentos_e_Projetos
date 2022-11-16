@@ -1,0 +1,33 @@
+/* 
+        ## Background
+
+    - Define um fundo par o nosso elemento
+    - Sua área de atuação é a caixa toda
+    - Por padrão, é transparente para todo elemento
+
+        ## Exemplos
+
+    - Usar cores sólidas
+    - Usar imagens
+    - Controlar:
+            * a posição das imagens;
+            * se elas se repetem;
+            * o tamanho delas na caixa;
+    - Usar cor e imagem juntas
+    - Usar cor gradiente
+*/
+h1{
+    background-color: rgb(20, 40, 120);
+    background-image: url(https://...); /* inserção de imagem */
+    background-repeat: no-repeat; /* repetição de imagem */
+    background-position: center bottom; /* posição no eixo x / posição no eixo y */
+    background-size: 50% 50%; /* largura x altura */
+    background-size: contain; /* ajustada à caixa */
+    background-origin: content-box; /* de onde partirá a imagem */
+    background-clip: padding-box;
+}
+h1{
+    background: rgb(20, 40, 12) url(../images) no-repeat left top / 50px border-box /* border-box aplicado para o primeiro valor (origin)*/content-box /*aplicado para (origin) e (clip)*/;
+    background: linear-gradient(45deg, red,yellow, )
+}
+

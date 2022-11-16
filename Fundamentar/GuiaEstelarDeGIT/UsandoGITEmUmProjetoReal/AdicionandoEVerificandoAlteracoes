@@ -1,0 +1,7 @@
+/*
+    # Adicionar e verificar alterações
+
+    git status (ver arquivos que não está no staged area)
+
+    git diff (ver o que foi alterado)
+*/

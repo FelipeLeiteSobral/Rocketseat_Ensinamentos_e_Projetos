@@ -1,0 +1,27 @@
+<!--
+    <button>
+
+        - Representa um botão
+        - Usado para enviar formulários
+        - É estilizado pelo user agent
+
+
+        Atributos comuns
+        - type
+            - submit
+            - reset
+            - button
+        - autofocus
+        - disabled
+        - name
+        - value
+        - form
+-->
+<form action="" id="ABC">
+    <input type="text" value="">
+    <button type="reset">Something to send</button> <!-- enviar o formulário (submit)
+                                                        limpar formulário (reset)-->
+</form>
+<button disabled type="submit" name="button" value="valor qualquer"> Enviar </button> <!-- Receber valor de um botão (submit, name, value)-->
+<button type="submit" form="ABC"> Enviar formulário ABC</button>
+<input type="submit" form="ABC" value="Enviar ABC">

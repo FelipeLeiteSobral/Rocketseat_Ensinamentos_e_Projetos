@@ -1,0 +1,11 @@
+/*
+    # Delete
+
+    Remove um recurso
+    características
+        * Não seguro
+        * idempotente
+        * body request/ response
+        * Não Usa-se em formulários
+        * Não cacheable
+*/

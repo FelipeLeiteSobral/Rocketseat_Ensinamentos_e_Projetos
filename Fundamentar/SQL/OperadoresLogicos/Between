@@ -1,0 +1,9 @@
+/*
+    # Between / Not between
+
+    SELECT * FROM aluno WHERE matricula BETWEEN 2 AND 7 (que está nesse intervalo)
+    SELECT * FROM aluno WHERE matricula NOT BETWEEN 2 AND 7 (que não está nesse intervalo)
+    
+
+    Serve para atribuir uma condição que esteja entre dois valores
+*/

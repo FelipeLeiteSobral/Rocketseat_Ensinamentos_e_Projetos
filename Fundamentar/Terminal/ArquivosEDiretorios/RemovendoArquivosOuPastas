@@ -1,0 +1,6 @@
+rm (remover para sempre)
+
+-r:
+  - remove
+-f:
+  - force (força a remoção de arquivos)

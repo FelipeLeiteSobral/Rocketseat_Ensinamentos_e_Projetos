@@ -1,0 +1,16 @@
+/*
+    # Configurando o GIT Inicialmente
+
+botão direito na pasta e click em "GIT BASH HERE"
+    git init 					(para iniciar o git)
+    git status 					(para ver o que o git está versionando)
+    git add "" 					(para adicionar um arquivo em específico)
+    git add . 					(para adicionar todos os arquivos ao repositório git)
+    git commit -m "commit inicial"	(criar nova versão)
+    git config --global user.email "felipeleitesobral@hotmail.com" 	(configurar email do git)
+    git config --global user.name "Felipe Leite Sobral" 			(nome que estará atrelado a versão git)
+
+No Windows, o arquivo .gitconfig estará no diretório $HOME que é C:/User/$USER
+
+(git help) te ajudará com os comandos
+*/

@@ -1,0 +1,9 @@
+/*
+    # Datatime
+
+    Campos são as informações presentes no cabeçalho
+
+    Eles precisam de uma configuração determinando seu tipo de dado (text, number, datatime...)
+
+    englobam apenas numero e caracteres especiais (12-12-2312)
+*/

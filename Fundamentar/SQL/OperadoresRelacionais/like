@@ -1,0 +1,5 @@
+/*
+    # like
+
+    SELECT * FROM aluno WHERE nome like "Jakeliny Gracielly" (texto deve está entre aspas)
+*/

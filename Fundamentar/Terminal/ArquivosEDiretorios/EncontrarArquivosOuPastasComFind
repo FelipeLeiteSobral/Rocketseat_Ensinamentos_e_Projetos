@@ -1,0 +1,6 @@
+    # find (Encontrar arquivos ou diretórios)
+
+find <path> arg [expression]
+
+-type <djf>
+-name

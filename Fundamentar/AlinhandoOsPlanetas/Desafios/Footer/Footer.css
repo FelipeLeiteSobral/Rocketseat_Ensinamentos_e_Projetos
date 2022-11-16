@@ -1,0 +1,26 @@
+/*
+    Crie o <footer> de um site que contenha a data de criação do site
+    Usando o flex, alinhe o elemento do footer bem ao meio
+    Deixe uma altura de 8rem para o footer.
+    O footer deverá ficar no final da página
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    background-color: grey;
+}
+footer{
+    margin-top: auto;
+    background-color: lightblue;
+    
+    height: 8rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

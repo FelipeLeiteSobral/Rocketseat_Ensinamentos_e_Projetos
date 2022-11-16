@@ -1,0 +1,8 @@
+/*
+    # Linkando um repositório remoto local
+
+    usar endereço do github com (git remote add origin NomeDoEndereço)
+
+    enviar atualizações pro endereço (git push)
+
+*/

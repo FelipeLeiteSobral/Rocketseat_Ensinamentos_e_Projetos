@@ -1,0 +1,11 @@
+/*
+    # Post
+
+    Publicar/Cadastrar um recurso
+    características
+        * Não seguro
+        * Não idempotente
+        * body request/ response
+        * Usa-se em formulários
+        * pode ser cacheable
+*/

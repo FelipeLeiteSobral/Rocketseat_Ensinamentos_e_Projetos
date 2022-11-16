@@ -1,0 +1,11 @@
+/*
+    # Patch
+
+    Modificação parcial(parte) de um recurso
+    características
+        * Não seguro
+        * Não idempotente
+        * body request/ response
+        * não usa-se em formulários
+        * não cacheable
+*/

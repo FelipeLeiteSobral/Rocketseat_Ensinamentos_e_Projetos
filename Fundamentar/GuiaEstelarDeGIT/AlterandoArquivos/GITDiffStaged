@@ -1,0 +1,5 @@
+/*
+    # GIT Diff --staged
+
+    git diff --staged (diferença entre stage area e repositório)
+*/

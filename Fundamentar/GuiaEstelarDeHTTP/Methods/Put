@@ -1,0 +1,11 @@
+/*
+    # Put
+
+    Cadastrar um novo ou atualizar um recurso
+    características
+        * Não seguro
+        * idempotente
+        * body request/ response
+        * Não usa-se em formulários
+        * não cacheable
+*/

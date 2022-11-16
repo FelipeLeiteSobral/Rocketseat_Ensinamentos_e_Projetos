@@ -1,0 +1,12 @@
+/*
+    # Iniciar Projeto
+
+    git init    (iniciar repositório)
+
+    git status (mostrar o que tem no repositório)
+
+    git add. (Atualizar stage area)
+
+    git commit -m "" (Criar versão)
+
+*/

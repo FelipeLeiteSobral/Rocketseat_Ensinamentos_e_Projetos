@@ -1,0 +1,16 @@
+/*
+        # Adicionando CSS #
+
+
+        # inline
+        * atributo 'style'(é recomendado estilizar no css, não em linha html)
+
+        ## <style>
+        * tag html que irá conter o css
+
+        ## <link>
+        * arquivo css externo
+
+        ## @import (regra CSS) importando fontes, cores... etc (é melhor utilizar o LINK)
+        * arquivo css externo
+*/

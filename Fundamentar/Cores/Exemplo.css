@@ -1,0 +1,28 @@
+*{margin: 0;
+}
+header{
+    height: 100px;
+    border:dashed red 1px;
+    background-color: rgb(0,34,150);
+    background-image: url(../images);
+    background-repeat: no-repeat;
+    background: linear-gradient(45deg, gray, yellow, gray);
+    
+}
+main{
+    height: 100%;
+    border:dashed red 1px;
+    background-color: rgb(0,34,150);
+    background-image: url(../images);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div{
+    color: blue;
+}
+h1{
+    color: red;
+}
+p{
+    background:linear-gradient(45deg, gray, yellow),url(../images) no-repeat left top / 50px border-box /* border-box aplicado para o primeiro valor (origin)*/content-box /*aplicado para (origin) e (clip)*/;
+}

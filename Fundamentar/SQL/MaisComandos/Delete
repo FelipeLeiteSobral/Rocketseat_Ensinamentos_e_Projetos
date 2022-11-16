@@ -1,0 +1,11 @@
+/*
+    # Delete
+
+    - É o comando para se fazer a exclusão de dados
+
+    DELETE FROM aluno WHERE matricula = 2
+
+    Sempre necessário colocar o WHERE senão ele apagará todos os dados
+
+    Assim que se deleta algo na tabela
+*/

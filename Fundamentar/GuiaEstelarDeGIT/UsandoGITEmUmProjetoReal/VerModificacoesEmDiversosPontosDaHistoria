@@ -1,0 +1,12 @@
+/*
+    # Ver modificações de vários pontos alterados
+
+    git diff
+
+    git log
+
+    git show IniciaisDoCommit (Hash do commit)
+
+    git show ... -- src/views/*
+
+*/

@@ -1,0 +1,8 @@
+/*
+    # Cliente
+
+    É o User Agent
+
+    - Normalmente é o browser
+    - Ele começa a conversa com o HTTP
+*/

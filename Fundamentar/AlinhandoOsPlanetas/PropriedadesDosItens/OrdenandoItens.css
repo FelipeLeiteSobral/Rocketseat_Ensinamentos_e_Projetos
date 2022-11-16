@@ -1,0 +1,28 @@
+/*
+    # order
+
+    - Atribuir ordem de elementos
+
+    OBS: quanto maior o valor mais ao final da lista ele estará
+*/
+.box {
+    display: flex;
+    border: 2px dashed red;
+}
+
+.box div {
+    border: 1px solid;
+}
+
+.box div:nth-child(1){
+    order: 1;
+}
+.box div:nth-child(2){
+    order: 0;
+}
+.box div:nth-child(3){
+    order: -1;
+}
+.box div:nth-child(4){
+    order: 0;
+}

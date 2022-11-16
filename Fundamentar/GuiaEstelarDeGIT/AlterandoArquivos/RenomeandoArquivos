@@ -1,0 +1,7 @@
+/*
+    # Renomear Arquivos
+
+    O git remove o arquivo e adiciona o mesmo arquivo com nome do arquivo editado
+
+    git mv (mover, renomear)
+*/

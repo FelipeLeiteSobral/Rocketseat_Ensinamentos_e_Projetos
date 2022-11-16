@@ -1,0 +1,22 @@
+p {
+    font-family: Times, sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-style: italic;
+    word-spacing: 8px;
+    line-height: 1.6;
+    text-transform: lowercase;
+    text-align: justify;
+}
+span{
+    font-family: 'Aboreto', cursive;
+    font-style: normal;
+    font-size: 26px;
+    font-stretch: expanded;
+    letter-spacing: 2px;
+    text-decoration: underline overline line-through dashed 1px;
+    text-shadow: 1px 1px 1px red, 2px 2px 1px green;
+}
+em{
+    font: italic normal bold normal 20px/1.5 Helvetica, Arial, sans-serif;
+}

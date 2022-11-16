@@ -1,0 +1,6 @@
+/*
+    # Divisão (/)
+    SELECT * FROM aluno WHERE matricula = 2/1
+
+    Funciona apenas para campos que são números(number), não funciona para campos de texto(text)
+*/

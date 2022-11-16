@@ -1,0 +1,17 @@
+/*
+# Anatomia
+
+CSS
+*/
+h1 {
+    color: blue;
+    font-size: 60px;
+    background:gray;
+}
+
+/* 
+# Selector (é a tag no HTML a ser referenciada), nesse caso é o H1
+# Declaration (é tudo que está dentro das chaves após a tag referenciada)
+# Properties (é o que será alterado na tag)
+# Property Value (é o quanto será alterado na tag de acordo com a propriedade)
+*/

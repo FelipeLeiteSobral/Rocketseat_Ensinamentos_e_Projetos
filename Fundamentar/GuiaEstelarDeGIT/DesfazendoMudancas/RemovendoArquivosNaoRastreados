@@ -1,0 +1,7 @@
+/*
+    # Removendo arquivos não rastreados
+
+    git clean -n (mostra o que removerá pra sempre)
+    git clean -f (deletar sem conseguir recuperar o arquivo)
+
+*/

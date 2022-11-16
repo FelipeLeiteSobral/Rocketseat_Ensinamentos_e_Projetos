@@ -1,0 +1,19 @@
+/*
+    # justify-content
+
+    - Alinhamento dos elementos dentro do container
+    - Distribuição dos elementos
+
+    ## valores
+
+    - flex-start
+    - flex-end
+    - center
+    - space-around
+    - space-between
+    - space-evenly
+*/
+.container{
+    justify-content: flex-end;
+    justify-content: space-around;
+}

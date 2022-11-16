@@ -1,0 +1,40 @@
+/*
+        ## Display: block       VS      Display: inline
+    - Como as caixas se comportam em relação às outras caixas
+    - Comportamento externo das caixas
+
+
+** block **(comportamento geral - lateral e vertical)                                       ** inline ** (comportamento lateral)
+
+
+- Ocupa(caixa) toda a linha, colocando o próximo elemento(caixa) abaixo desse.              - Elemento(caixa) ao lado do outro(caixa)
+
+- width e height são respeitados                                                            - width e height não funcionam
+
+- padding, margin, border irão funcionar normalmente.                                       - Somente valores horizontais de margin, padding e border
+
+
+exemplos:
+block: <p> <div> <section>, todos os headings <h1><h2>...
+inline: <a> <strong> <span> <em>
+
+*/
+div{
+    height: 100px;
+    border: 1px solid red;
+    width: 10px;
+    
+    margin: 20px;
+}
+span{
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    display:block;              /* somente com esse comando que as propriedades acima vão se respeitar como esperando em block */
+}
+div{
+    height: 100px;
+    border: 1px solid red;
+    width: 10px;
+    display:inline; /* o comportamento pode mudar tanto pro block quanto pro inline, nesse caso a div se comportará como inline */
+}

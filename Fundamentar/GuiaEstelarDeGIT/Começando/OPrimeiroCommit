@@ -1,0 +1,9 @@
+/*
+    # Iniciar Repositório
+
+    vim file.txt (criar arquivo)
+
+    git add . (Adicionar a versão todos os arquivos na pasta)
+
+    git commit -m "" (Criando uma nova versão com uma mensagem)
+*/

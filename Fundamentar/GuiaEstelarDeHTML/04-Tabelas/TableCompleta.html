@@ -1,0 +1,54 @@
+<!--
+    2 Lojas
+        Quantos produtos foram produzidos, quantos vendidos, e agrupado por nome dos produtos
+-->
+<table>
+  <caption>
+    Produtos produzidos X Vendidos por loja
+  </caption>
+  <!--Informações para melhorar o design, SEO-->
+
+  <colgroup>
+    <col />
+    <!--O COL serve para significar cada coluna-->
+    <col span="2" style="background-color: red" />
+    <col span="2" style="background-color: blue" />
+    <!--STYLE irá estilizar a coluna-->
+    <!--O SPAN irá dizer quantas colunas que receberam a característica(quantas colunas vão receber cor)-->
+  </colgroup>
+  <!--O COLGROUP irá agrupar colunas-->
+
+  <thead>
+    <tr>
+      <th rowspan="2">Produto</th>
+      <!--ROWSPAN serve para determinar quantas linhas a célula irá ocupar -->
+      <th colspan="2" scope="colgroup">Loja1</th>
+      <!--COLSPAN irá determinar quantas colunas a célula irá ocupar-->
+      <th colspan="2" scope="colgroup">Loja2</th>
+      <!-- O SCOPE irá referenciar se a célula está coerente com a linha ou com a coluna-->
+    </tr>
+    <tr>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Vassouras</td>
+      <!--ROW significa linha-->
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td scope="row">Baldes</td>
+      <td>10</td>
+      <td>10</td>
+      <td>30</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+/*
+    Crie uma galeria de fotos onde teremo 3 colunas e 9 fotos
+    Deixe um espaço de .8rem entre os documentos da galeria
+*/
+*{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+div{
+    display: flex;
+    gap: 0.8rem;
+    margin: 0.8rem;
+}
+img{
+    width: 100%;
+    max-height: auto;
+}

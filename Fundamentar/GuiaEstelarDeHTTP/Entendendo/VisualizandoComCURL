@@ -1,0 +1,11 @@
+/*
+    # Visualizando com cURL
+
+    Rodar no Terminal (GIT Bash) o comando curl
+
+    Visualizar headers de saida e headers de chegada
+
+    curl -i EndereçoURL     (trará os headers de resposta)
+
+    curl -v EndereçoURL     (Todos os headers)
+*/

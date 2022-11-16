@@ -1,0 +1,25 @@
+/*
+    # Status code mais comuns
+
+    100 Continue
+
+    200 OK (get, post)
+    200 Created (put)
+    204 No content (delete, put)
+
+    301 Moved permanent
+    308 permanent redirect
+    302 Found
+    307 Temporary redirect
+
+    400 bad request
+    401 unauthorized
+    403 Forbidden
+    404 Not Found
+    405 Method not allowed
+    429 too many requests
+
+    500 Internal server error
+    503 service unavaiable
+
+*/

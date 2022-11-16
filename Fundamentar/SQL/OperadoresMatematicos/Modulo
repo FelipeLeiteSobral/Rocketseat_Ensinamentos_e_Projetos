@@ -1,0 +1,8 @@
+/*
+    # Módulo (%)
+    SELECT * FROM aluno WHERE matricula > %
+
+    Seria o resto de uma divisão (módulo de 7/5 é 2) = 7%5
+
+    Funciona apenas para campos que são números(number), não funciona para campos de texto(text)
+*/

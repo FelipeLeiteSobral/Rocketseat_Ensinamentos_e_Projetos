@@ -1,0 +1,8 @@
+/*
+    # Conceitos de HTTP
+
+    - Simples para qualquer pessoa/ legível
+    - Cliente/Servidor faz uma Requisição/Resposta
+    - Stateless Não guarda informações, Não existe relação entre conexões, Guardar sessões com (Cookies, Storages)
+    - Extensível Header, troca de informações entre cliente e servidor
+*/

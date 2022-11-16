@@ -1,0 +1,4 @@
+/*
+    # setTimeout (function, delay)
+
+*/

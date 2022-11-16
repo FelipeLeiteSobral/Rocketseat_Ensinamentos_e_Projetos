@@ -1,0 +1,27 @@
+/*
+    Crie um layout com 2 colunas, uma ao lado da outra
+    A coluna da esqueda deverá ter 25% de tamanho e a coluna da direita deverá ocupar todo o espaço que sobra
+    Faça uma separação de 1rem entre os elementos
+*/
+*{
+    margin: 0;
+}
+main{
+    display: flex;
+    background-color: grey;
+    width: 25vw;
+    height: 100vh;
+}
+
+aside{
+    display: flex;
+    background-color: lightgrey;
+    height: 100vh;
+    width: 100%;
+}
+
+div{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}

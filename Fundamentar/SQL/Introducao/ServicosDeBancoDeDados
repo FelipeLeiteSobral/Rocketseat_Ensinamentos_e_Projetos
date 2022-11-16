@@ -1,0 +1,12 @@
+/*
+    Guardar dados em empresas que já disponibilizam servidores para esse armazenamento num repositório e fazem a gestão do banco de dados.
+    
+    Ex: SQLite
+        MariaDB
+        MySQL
+        PostgreSQL
+        Firebase
+        Oracle
+        mongoDB
+        redis
+*/

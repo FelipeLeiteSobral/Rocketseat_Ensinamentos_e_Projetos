@@ -1,0 +1,8 @@
+/*
+    # Modificando arquivos local e enviando para repositório remoto
+
+    git add .
+    git commit -m ""
+    git push
+
+*/

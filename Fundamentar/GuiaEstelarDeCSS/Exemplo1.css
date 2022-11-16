@@ -1,0 +1,19 @@
+/*Pode-se agrupar tags compartilhando do mesmo estilo apenas colocando uma vírgula*/
+h1, h2 {
+    color: blue;
+    font: size 60px;
+    background: grey;
+}
+/* asterisco pega todos elementos da página */
+* {
+    color:grey;
+    margin: 2px;
+} 
+/* Alinhamento da página com as laterais (margem) */ /*(id)*/
+#container {
+    width: 200px;
+}
+/* Espaçamento entre linhas ou textos */ /*(class)*/
+.n-40 {
+    margin: 100px;
+}

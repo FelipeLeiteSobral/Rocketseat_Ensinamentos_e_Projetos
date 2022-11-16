@@ -1,0 +1,14 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.box div{
+    border: 1px solid;
+    /* flex-basis: auto;*/
+    flex-basis: 500px;
+}/*em relação ao eixo principal*/
+.box div:nth-child(1){
+    width: 500px;
+}

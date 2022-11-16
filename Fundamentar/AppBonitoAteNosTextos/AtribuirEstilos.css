@@ -1,0 +1,86 @@
+/*
+    # Atribuindo mais estilos às fontes
+
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+
+    ## font-variant
+
+    *variações na apresentação fonte
+*/
+p {
+  font-variant: small-caps;
+}
+
+/*
+    ## font-stretch
+
+    * alargamento ou encolhimento da fonte
+    * aceita palavras-chave como: expanded, condensed, normal
+    * aceita porcentagens de 50% a 200%
+*/
+p {
+  font-stretch: expanded;
+}
+/*
+    ## letter-spacing
+
+    * espaços entre caracteres
+*/
+p {
+  letter-spacing: 4px;
+}
+/*
+    ## word-spacing
+
+    * espaços entre palavras
+*/
+p {
+  word-spacing: 5px;
+}
+/*
+    ## line-height
+
+    * espaços entre linhas
+    * pode ser com unidades ou sem unidades de medida
+    * comuns: 1.5 ou 2
+*/
+p {
+  line-height: 1.6;
+}
+/*
+    ## text-transform
+
+    * transformações de texto
+*/
+p {
+  text-transform: uppercase;
+}
+/*  
+    ## text-decoration
+
+    * aparência decorativa de um texto
+    * line: underline / overline / line-through
+        (podemos aplicar mais de 1 valor)
+    * style:                wavy / dotted / double / dashed / solid
+    * color:                <color> values
+*/
+p {
+  text-decoration: underline overline line-through;
+}
+/*
+    ## text-align
+
+    * alinhamento de texto
+*/
+p {
+  text-align: center;
+}
+/*
+    ## text-shadow
+
+    * sombra aplicada a um texto
+    * permite múltiplos valores
+*/
+p {
+  text-shadow: 1px 1px 1px red, 2px 2px 1px green; /*  offset-x / offset-y / blur-radius / color  */
+}

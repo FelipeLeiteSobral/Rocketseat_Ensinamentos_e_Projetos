@@ -1,0 +1,11 @@
+/*
+        # box-sizing
+
+        Como será calculado p tamanho total da caixa?
+
+        -content-box / border-box
+*/
+
+div {
+        box-sizing: border-box;
+}

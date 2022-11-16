@@ -1,0 +1,9 @@
+/*
+    # Levar arquivos ao Stage Area
+
+    Adicionar arquivos:
+
+    separados... (git add NomeDoArquivo)
+
+    Todos arquivos... (git add .)
+*/

@@ -1,0 +1,11 @@
+/*
+    # Proxies
+
+    Fica entre o client e o servidor
+    Ajuda no transporte de dados
+    Funções:    Cache
+                Filtro
+                Load Balancing
+                Autenticação
+                Autorização
+*/

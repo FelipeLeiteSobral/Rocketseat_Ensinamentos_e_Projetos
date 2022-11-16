@@ -1,0 +1,11 @@
+/*
+    # Null / Not Null
+
+    Null representa campos não preenchidos
+    Deve ser acompanhado de "IS" OU "IS NOT"
+
+    SELECT * FROM funcionarios WHERE id_departamento IS NOT NULL
+    SELECT * FROM funcionarios WHERE id_departamento IS NULL
+    
+    Selecionara os valores determinados 
+*/

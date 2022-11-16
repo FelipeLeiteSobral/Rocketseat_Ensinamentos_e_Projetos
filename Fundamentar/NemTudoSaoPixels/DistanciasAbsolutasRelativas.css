@@ -1,0 +1,40 @@
+/*
+    # Distâncias absolutas <length>
+
+    São fixas e não alteram seu valor
+
+    Unidade             Nome                Equivalência
+    cm                  Centímetros         1 cm = 96 px = (1/2.54)in
+    in                  Inches (polegadas)  1 in = 2.54 cm = 96px
+    px                  Pixels              1 px = 1/96 th of 1 in
+
+
+        * o mais comum e mais utilizado é o *px*
+        * não recomendado usar "cm"
+
+    # DistÇancias relativas
+
+    São relativas a algum outro valor, pode ser o elemento pai, ou root, ou tamanho da tela.
+
+    * Benefício: Maior adaptação aos diferentes tipos de tela
+    
+    Unidade             Relativo a
+    em                  Tamanho da font do pai. (tag superior)
+    rem                 Tamanho da font do elemento raiz (root/html)
+    vw                  1% da viewport width
+    vh                  1% da viewport height
+
+    viewport significa a tela que está sendo amostrada
+*/
+:root {
+    font-size: 15px;
+}
+html {
+    font-size: 10px;
+}
+div {
+    font-size: 18px;
+}
+p{
+    font-size: 1.6em;
+}

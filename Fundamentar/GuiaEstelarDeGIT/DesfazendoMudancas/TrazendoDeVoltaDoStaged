@@ -1,0 +1,5 @@
+/*
+    # Trazendo de volta do Staged
+
+    git restore --staged (desfazer modificação do staged)
+*/

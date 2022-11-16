@@ -1,0 +1,6 @@
+/*
+    # Menor ou igual a (<=)
+    SELECT * FROM aluno WHERE matricula <= 5
+
+    Funciona apenas para campos que são números(number), não funciona para campos de texto(text)
+*/

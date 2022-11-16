@@ -1,0 +1,6 @@
+/*
+    # Igual (=)
+    SELECT * FROM aluno WHERE cpf = 45678945645
+
+    Funciona apenas para campos que são números(number), não funciona para campos de texto(text)
+*/

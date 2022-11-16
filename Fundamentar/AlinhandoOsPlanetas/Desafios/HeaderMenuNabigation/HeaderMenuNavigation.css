@@ -1,0 +1,65 @@
+/*
+    # Header Menu Navigation
+
+    - Crie o <header> de um site que contenha uma logo e um menu.
+    - Um elemento deverá ficar ao lado do outro.
+    - A logo que ficará na extrema esquerda e o menu ficará na extrema direita.
+    - Os itens do menu ficarão um ao lado do outro com um espaço de .8rem entre eles.
+    - O último elemento do menu será um botão de contato e você poderá utilizar o selector :last-child() para estilizar.
+*/
+*{
+    margin:0;
+    padding:0;
+}
+header, nav, menu{
+    display: flex;
+}
+header {
+    background-color: rgb(226, 226, 226);
+    width: 100vw;
+    height: 100px;
+    align-items: center;
+}
+nav, menu{
+    width: 100%;
+    align-items: center;
+}
+.nav_list {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+li{
+    margin-left: .8rem;
+    list-style: none;
+}
+.contact{
+    background-color: rgb(78, 78, 240);
+    border: 0;
+    margin-right: 3%;
+    border-radius: 3px;
+    padding: 7px 10px 7px 10px;
+}
+.logo {
+    height: 60px;
+}
+.logo_div{
+    display: flex; 
+    justify-content: flex-start;
+    margin-left: 3%;
+}
+a{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+button a{
+    font-weight: bold;
+    color: white;
+}

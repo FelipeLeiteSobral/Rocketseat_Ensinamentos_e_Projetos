@@ -1,0 +1,58 @@
+/*
+        # Cascata (cascading)
+
+    A escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento
+
+    *Seu estilo é lido de cima para baixo(seja no CSS ou no HTML)
+
+    É levado em consideração 3 fatores
+
+    1. Origem do estilo
+    2. Especificidade 
+    3. Importância
+
+
+        ### Origem do estilo (Hierarquia de forças)
+inline > tag style > tag link
+
+        ###Especificidade
+É um cálculo matemático, onde, cada tipo de seletor e origem do estilo possuem valores a serem considerados (força de cada tipo de especificação, quanto maior, mais forte.)
+
+    0. Universal seletor, combinators e negation pseudo-class (:not())
+    1. Element type(tag) selector e pseudo-elements (::before, ::after)
+    10. Classes e attribute selectors ([type="radio"]) (class="")
+    100. ID selector
+    1000. Inline
+
+
+        ### A regra !important
+    * Cuidado, evite o uso
+    * Não é considerado uma boa prática
+    * Quebra o fluxo natural da cascata
+    (Usa-se somente ao presenciar uma biblioteca de terceiro e essa biblioteca nao está lhe permitindo editar)
+*/
+
+#n-40,
+#n-40 strong {
+    color:brown; 
+}
+
+#my-title {
+    color:green;
+}
+
+.title {
+    color:red;
+}
+
+h1 {
+    color:blue;
+}
+
+h2.title#my-title {
+    color: purple;
+}
+
+*{
+    color:aqua;
+}

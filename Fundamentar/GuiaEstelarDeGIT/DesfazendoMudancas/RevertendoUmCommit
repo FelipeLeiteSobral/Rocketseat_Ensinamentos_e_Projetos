@@ -1,0 +1,7 @@
+/*
+    # Revertendo um commit 
+
+    git revert HEAD-NumeroQueTemNoHash (voltando a uma versão anterior)
+
+    git log --online
+*/

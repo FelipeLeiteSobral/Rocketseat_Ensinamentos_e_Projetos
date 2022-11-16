@@ -1,0 +1,11 @@
+/*
+    # Update
+
+    - É o comando para se fazer a edição de dados
+
+    - Não é necessário preencher a Primary Key
+
+    UPDATE aluno SET name = "Josué Matias", responsavel="Marcio Suarez" WHERE matricula = 2
+
+    Assim que se edita algo na tabela
+*/

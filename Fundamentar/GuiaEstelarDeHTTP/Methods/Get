@@ -1,0 +1,12 @@
+/*
+    # Get
+    
+    - Pegar um recurso
+    - somente recebe dados
+    - características
+        * seguro
+        * não é idempotente
+        * body requeste (não/sim)
+        * cacheable 
+        * Uso em formulários
+*/

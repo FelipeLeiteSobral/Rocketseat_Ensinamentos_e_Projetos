@@ -1,0 +1,5 @@
+/*
+    # Corrigindo o último commit
+
+    git commit --amend -m "NovaMensagem" (Isso mudará a hash, e pode alterar mensagem ou corrigir algo que fez de errado no commit)
+*/

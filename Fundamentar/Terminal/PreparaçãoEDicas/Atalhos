@@ -1,0 +1,12 @@
+# Atalhos
+    Varia de terminal para terminal
+
+    setinhas:
+        - up-down (comandos anteriores, próximos)
+    Ctrl:
+        - setinhas (pula palavras) (MAC -> option + arrow)
+        - A(início da linha)
+        - E(final da linha)
+        - U(limpa da linha)
+        - K(remove do cursor até o final da linha)
+        - K(clear -> CMD + K para o MAC)

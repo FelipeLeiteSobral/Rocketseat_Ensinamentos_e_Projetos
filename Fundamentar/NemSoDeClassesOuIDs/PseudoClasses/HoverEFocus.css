@@ -1,0 +1,27 @@
+/*
+    ## Ações do usuário
+
+    *   :hover
+    *   :focus
+
+    ## Atrbutos
+
+    *   :disabled
+    *   :required
+
+    ## Referência
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/
+a:hover{
+    color:red;
+}
+input:focus {
+    border-color: red;
+}
+input:disabled{
+    background-color: rgb(194, 194, 194)
+}
+input:required{
+    background-color: rgb(228, 104, 104)
+}

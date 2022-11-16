@@ -1,0 +1,16 @@
+/*
+        Caixas
+
+        - Você irá perceber que (quase) tudo sao caixas do CSS
+        - Posicionamentos, tamanhos, espaçamentos, bordas, cores
+        - Caixa pode ficar ao lado uma da outra, ou acima
+        - Elementos HTML são caixas (vazias)
+
+    Quase tudo serão caixas
+    Caixas é uma maneira de organizar o conteúdo do site
+*/
+
+h1 {
+    border: 1px solid red; /*formação de uma caixa/bordas */
+    margin: 20px; /*Espaço por volta da caixa (externamente) */
+}

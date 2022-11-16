@@ -1,0 +1,11 @@
+/*
+    # flex-grow
+
+    - O crescimento do item dentro do container em relação aos espaços vazios
+    
+    valore: 0, 1, 2 (separação em frações)
+*/
+
+.box div:nth-child(2), .box div:nth-child(3){
+    flex-grow: 0;
+}

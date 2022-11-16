@@ -1,0 +1,39 @@
+/*
+            # Page Layouts
+
+        Posicionamento de elementos
+
+    - Tables
+    - Floats e clear
+    - Frameworks e Grid Systems
+    - Flexbox
+    - Grid
+
+    ## Posicionamentos
+
+Controlar onde, na página, o elemento irá ficar, alterando o fluxo normal dos elementos
+
+        - Name:               position
+        - Value:              static / relative / absolute / fixed
+
+    ## Relative
+
+    - top, right, bottom, left e z-index
+    Mantém o espaço inicial mas fica livre para posicionamento na tela sem ocupar uma linha inteira na posição que foi movimentado
+
+    ## Absolute
+
+    - top, right, bottom, left e z-index
+    como se fosse representado em uma nova camada, sobrepondo a página
+    Sempre será em relação a página (ou ao pai dele - tag onde o elemento está dentro)
+
+    ## Fixed
+
+    - top, right, bottom, left e z-index
+    Ficará fixo o elemento durante a rolagem da página
+
+    # Element Stacking
+
+    É referente à o posicionamento das camadas (z-index), se um z-index é maior que outro z-index então ele irá sobrepor este outro elemento.
+    
+*/

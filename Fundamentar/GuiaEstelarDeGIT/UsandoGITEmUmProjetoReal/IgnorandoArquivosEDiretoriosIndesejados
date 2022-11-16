@@ -1,0 +1,10 @@
+/*
+    # Ignorar arquivos e pastas para o GIT
+
+    arquivo .gitignore
+
+    para pastas: NomeDaPasta/
+    para arquivo: .NomeDoArquivo
+
+
+*/

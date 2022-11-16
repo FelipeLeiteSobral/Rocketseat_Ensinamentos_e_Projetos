@@ -1,0 +1,7 @@
+/*
+    # Recuperando Arquivos (Rastreados)
+
+    git checkout -- NomeDoArquivo (Já estará no staged Area)
+
+    git restore --staged 
+*/

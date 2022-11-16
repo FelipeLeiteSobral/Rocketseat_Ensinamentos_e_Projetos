@@ -1,0 +1,39 @@
+<!--
+    <input type="url">
+
+    - Espera que o usuário digite uma url
+    - Irá validar se o valor digitado é uma url
+
+    # Atributos
+
+    - placeholder
+    - readonly
+    - value
+
+    - required
+
+    - minlength /maxlength
+        * O mínimo e/ou máximo valor que o campo irá conter
+
+    - size
+        * Valor numérico indicado quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+
+    - pattern
+        *Uso de expressão regular para validar o campo
+-->
+<datalist id="urlsdata">
+    <option>https://meusite.com.br</option>
+    <option>https://meusegundosite.com.br</option>
+</datalist>
+<form action="">
+<input 
+    type="url" 
+    placeholder="https://example.com"
+    pattern=".*\.com\.br.*" 
+    title="somente sites com .com.br serão aceitos"
+    required
+    list="urlsdata"
+    spellcheck="false"
+>
+<button type="submit"> Enviar </button>
+</form>

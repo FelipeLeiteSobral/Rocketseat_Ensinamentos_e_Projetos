@@ -1,0 +1,6 @@
+/*
+    # AND
+    SELECT * FROM aluno WHERE matricula > 1 AND nome LIKE "%a%"
+
+    Serve para atribuir mais de uma condição
+*/

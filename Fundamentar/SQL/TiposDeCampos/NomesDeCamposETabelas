@@ -1,0 +1,10 @@
+/*
+    # Nomes de campos e tabelas
+
+    Regras para escrever nome de tabelas e de campos:
+
+    1- Deve começar por uma letra do alfabeto
+    2- Os caracteres seguintes não são permitidos: ()+=/*";=&#><^'{}%~ç
+    3- Não pode conter espaços (trocar por _ )
+    4- Não pode conter acentuação 
+*/

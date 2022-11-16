@@ -1,0 +1,23 @@
+/*
+        # Strings e Identificadores
+    
+    * Strings: Texto envolto em aspas
+    * Identificadores: red, black, gold;
+*/
+
+body{
+    height: 100vh; /*referência para o cálculo de da porcentagem do "height"*/
+}
+.box{
+    height: calc(50%+20px);
+    width: 400px;
+    background-image: url(http://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.box:after
+{
+    content:"Aqui vem alguma mensagem"; /*conteúdo num pseudo elemento*/
+    color: white;
+}

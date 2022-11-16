@@ -1,0 +1,11 @@
+/*
+    # Insert into
+
+    - É o comando para se fazer a inserção de dados
+
+    - Não é necessário preencher a Primary Key
+
+    INSERT INTO aluno (nome, cpf, responsavel) VALUES ("Maria Luiza", 12312312312, "Manoel Gonçalves")
+
+    Assim que se insere algo novo a tabela
+*/

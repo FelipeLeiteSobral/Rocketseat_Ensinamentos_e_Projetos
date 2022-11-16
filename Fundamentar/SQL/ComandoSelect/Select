@@ -1,0 +1,7 @@
+/*
+    # Select
+
+    O comando select serve para você abrir o arquivo 
+
+    SELECT * FROM nomeDoArquivo
+*/

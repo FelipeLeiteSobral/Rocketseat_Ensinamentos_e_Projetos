@@ -1,0 +1,11 @@
+/*
+    # Methods
+
+    Define um conjunto de métodos HTTP
+    Indica a ação que o cliente deseja operar
+    Podem ser chamados de Verbos HTTP
+    Cada um possui a sua semântica
+    Características(Seguro ou Idempotente)
+    
+    Idempotente é que a resposta deve ser a mesma a mesma
+*/

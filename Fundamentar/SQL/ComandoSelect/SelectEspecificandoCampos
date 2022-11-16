@@ -1,0 +1,7 @@
+/*
+    # Select especificando campos
+
+    Selecionará o campo dos cabeçalhos especificados
+
+    SELECT nome, materia, cpf FROM professor
+*/

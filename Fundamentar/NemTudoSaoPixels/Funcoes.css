@@ -1,0 +1,21 @@
+/*
+        # Funções
+
+        Em programação, funções são reconhecidas por causar um reaproveitamento de código
+*/
+
+/*
+        HTML PARA EXEMPLO
+
+        <div class="box"></div> 
+*/
+body{
+    height: 100vh; /*referência para o cálculo de da porcentagem do "height"*/
+}
+.box{
+    height: calc(50%+20px);
+    width: 400px;
+    background-image: url(http://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}

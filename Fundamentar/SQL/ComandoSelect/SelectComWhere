@@ -1,0 +1,13 @@
+/*
+    # Select com Where
+
+    Serve para entregar a tabela com dados que tenham determinado valor 
+
+    SELECT * FROM aluno WHERE matricula = 1
+
+    SELECT * FROM aluno WHERE nome like "j%" (para nomes que comecem com "J" no campo NOME)
+
+    Para texto a informação deve ser colocada entre aspas("")
+
+    "%j%" (Para nomes que tenham "j" no campo NOME)
+*/

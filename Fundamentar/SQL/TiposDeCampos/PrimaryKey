@@ -1,0 +1,9 @@
+/*
+    # Primary Key
+
+    Campos são as informações presentes no cabeçalho
+    
+    É a referência da tabela
+
+    A Primary Key precisa que seus campos subsequentes sejam unicamente números(numbers) que não se repitam em diferentes campos subsequentes
+*/

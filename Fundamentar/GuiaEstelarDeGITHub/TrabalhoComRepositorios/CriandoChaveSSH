@@ -1,0 +1,11 @@
+/*
+    # Criando chave SSH
+
+    Entrar no terminal
+
+    ssh-keygen -t rsa -b 4096 -C "seuendereçodeemail@hotmail.com"
+
+    cat ~/.ssh/id_rsa.pub
+
+    Mostrará a chave e ai é só colocar no GitHub
+*/

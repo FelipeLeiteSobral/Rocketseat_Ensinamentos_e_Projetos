@@ -1,0 +1,19 @@
+/*
+    # Visualizando a comunicação
+
+    Browser(client) >< Servidor
+
+    Message{Pedido, Resposta, Request/Response}
+
+
+    Request message
+        * GET
+        * User-Agent
+        * Accept
+
+    Response message
+        * HTTP
+        * Server-express
+        * Content-Type
+
+*/
