@@ -1,0 +1,11 @@
+/*
+    # Framework Express
+
+    Conjunto de arquivo com códigos que será baixado para dentro do Projeto Node
+    
+    auxiliar no momento de criar uma aplicação
+    
+    métodos http e midware que facilitam a criação de API's 
+
+    npm i express       <=      no terminal
+*/

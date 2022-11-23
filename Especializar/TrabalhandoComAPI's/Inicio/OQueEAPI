@@ -1,0 +1,11 @@
+/*
+    # O que é API?
+
+    Front-End (se comunica diretamente com o usuário)
+
+    API (Intermédio do front com o back-end. Entrega dados prontos para o front)
+
+    Back-End (processamentos solicitados pelo cliente no front )
+
+
+*/

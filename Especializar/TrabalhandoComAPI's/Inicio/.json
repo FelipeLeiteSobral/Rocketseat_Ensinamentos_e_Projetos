@@ -1,0 +1,19 @@
+/*
+    # JSON
+
+    É um formato de arquivo
+
+    Pode usar em qualquer linguagem (universal)
+
+    o JSON inicia e termina com chaves {}
+*/
+{
+    "nome": "Felipe Leite Sobral",
+    "cidade": "Aracaju",
+    "Telefone": "79999079519",
+    "livros_favoritos": ["Pai rico pai pobre", "Segredos da mente milionária", "GOT"],
+    "hobbies": {
+        "semana": "patinação",
+        "fim_de_semana": "Netflix"
+        }
+}

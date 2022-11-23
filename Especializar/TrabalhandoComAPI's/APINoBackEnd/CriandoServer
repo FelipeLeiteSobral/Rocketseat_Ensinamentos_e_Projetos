@@ -1,0 +1,11 @@
+/*
+    # Criando Server
+
+    Fazer o LocalHost:3000 existir
+
+    chamar modulo no arquivo index.js 
+    
+    (const express = require('express'))
+    (const app = express())
+    app.listen("NUMERO_DO_LOCAL_HOST")
+*/
