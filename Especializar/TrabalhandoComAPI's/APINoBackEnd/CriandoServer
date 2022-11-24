@@ -8,4 +8,6 @@
     (const express = require('express'))
     (const app = express())
     app.listen("NUMERO_DO_LOCAL_HOST")
+
+    para rodar o server usar no terminal node .
 */

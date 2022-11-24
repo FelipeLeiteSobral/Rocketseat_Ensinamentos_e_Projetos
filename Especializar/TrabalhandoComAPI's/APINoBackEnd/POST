@@ -1,0 +1,19 @@
+/*
+    # POST
+
+    enviar informações de fora(do meu site) para dentro da API(api conectada a esse site)
+
+    o REQ utiliza-se para receber o conteúdo da requisição
+    o RES utiliza-se para responder o conteúdo
+
+    app.route('/').post((req,res)=>req.body)
+    app.route('/sobre').post((req,res)=>res.send("Hello sobre"))
+
+    Use o Insominia para poder fazer o POST pois o browser não irá fazer isso
+
+    Para isso o conteúdo tem que estar em JSON para que a API possa ler (middleware) <= É o que está dentro do POST(----)
+
+    app.use(express.json()) <= esse comando irá transformar o conteúdo dentro do POST em JSON
+
+
+*/

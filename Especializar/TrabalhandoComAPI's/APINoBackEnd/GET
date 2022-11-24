@@ -1,0 +1,14 @@
+/*
+    # GET
+
+    browser busca a rota GET
+
+    rota é o que vem após a barra /
+
+    www.algumacoisa.com/ROTA
+
+    app.route('/').get((req,res)=>res.send("Hello"))
+    app.route('/sobre').get((req,res)=>res.send("Hello sobre"))
+
+    O primeiro é a url da home e o segundo é a sub-página sobre
+*/
