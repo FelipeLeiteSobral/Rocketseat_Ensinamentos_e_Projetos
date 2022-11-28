@@ -1,0 +1,7 @@
+/*
+    # DELETE
+
+    Serve para deletar alguma informação
+
+    app.route("/").delete((req,res) => {res.send("apagado!")})
+*/

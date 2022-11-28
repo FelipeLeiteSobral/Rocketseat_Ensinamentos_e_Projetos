@@ -26,3 +26,7 @@ app.route("/").put((req,res)=> {
     author = req.body.author //coloca-se author após o ponto para ele receber apenas o conteúdo dentro da chave e não a estrutura de JSON inteira
     res.send(author)
 })
+
+app.route("/:identificador").delete((req,res) => {
+    res.send(req.params.identificador)
+})
