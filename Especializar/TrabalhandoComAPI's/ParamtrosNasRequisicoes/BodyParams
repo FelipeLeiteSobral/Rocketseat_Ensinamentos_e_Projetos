@@ -2,4 +2,6 @@
     # Body params
 
     Requisição do tipo body: informações enviadas para API (não sendo mostradas na url mas sim no body)
+
+    req.body
 */

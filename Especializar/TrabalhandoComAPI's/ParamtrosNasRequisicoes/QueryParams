@@ -1,0 +1,8 @@
+/*
+    # Query params
+
+    na url tem como identificador a interrogação(?) e na frente virá uma variável                   ?nome=felipe       =>       "nome":"felipe"
+    dessa forma não precisa da criação de variáveis no código
+
+    para adicionar mais de uma variável na url coloca-se (&)
+*/

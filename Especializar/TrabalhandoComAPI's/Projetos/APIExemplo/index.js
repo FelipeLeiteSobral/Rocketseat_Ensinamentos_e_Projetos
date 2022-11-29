@@ -23,3 +23,5 @@ app.route("/").get((req, res) =>
 {
     res.send(usersList)
 })
+
+app.route("/:nome").get((req, res) => res.send(req.params.nome))
