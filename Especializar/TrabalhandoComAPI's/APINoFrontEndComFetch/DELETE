@@ -1,0 +1,7 @@
+/*
+    # DELETE
+
+    Irá deletar informações que pode aparecer no front da aplicação que estão integradas na API
+
+    Não necessita passar o body no fetch
+*/

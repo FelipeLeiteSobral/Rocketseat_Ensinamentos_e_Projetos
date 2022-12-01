@@ -1,0 +1,11 @@
+/*
+    # POST
+    
+
+    a cada Ctrl + S     ele irá fazer uma adição
+
+    method:"POST",
+        body: JSON.stringify(newUser),
+        headers:{
+            "Content-type":"application/json; charset=UTF-8"
+*/
