@@ -1,0 +1,13 @@
+/*
+    # GET com parâmetros
+
+    axios.get(`${url}/${id}`)
+        .then(response => {
+            const data = response.data;
+            userName.textContent = data.name
+            userCity.textContent = data.city
+            userID.textContent = data.id
+            userAvatar.src = data.avatar
+        })
+
+*/

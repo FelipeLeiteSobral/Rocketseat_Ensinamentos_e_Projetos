@@ -1,0 +1,12 @@
+/*
+    # POST
+
+    axios.post(url, {        
+            name:'FelipeLeiteSobral',
+            city:"Berlin",
+            avatar:'http://pixsum.photos/200/300'
+    })
+    .then(response => {
+        console.log(response)
+    })
+*/

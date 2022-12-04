@@ -1,0 +1,9 @@
+/*
+    # GET
+    
+    axios.get(url)
+    .then(response => {
+        apiResult.textContent = JSON.stringify(response.data)
+    })
+
+*/

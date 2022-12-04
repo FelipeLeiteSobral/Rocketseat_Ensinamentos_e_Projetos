@@ -1,0 +1,15 @@
+/*
+    # PUT
+
+    function editUser(id, editedUser) {
+    axios.put(`${url}/${id}`, editedUser)
+    .then(response => console.log(response))
+    .catch(error => console.error(error))
+}
+
+const editedUser = {
+    name: "Joãozin",
+    city: "Arapiraca",
+    avatar: "https://picsum.photos/200/300"
+}
+*/
