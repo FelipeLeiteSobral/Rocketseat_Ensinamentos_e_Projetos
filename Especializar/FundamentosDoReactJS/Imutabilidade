@@ -1,0 +1,7 @@
+/*
+    # Imutabilidade
+
+    É o principio que os estados react respeita
+
+    o conteúdo não deve ser alterado mas sim substituído
+*/

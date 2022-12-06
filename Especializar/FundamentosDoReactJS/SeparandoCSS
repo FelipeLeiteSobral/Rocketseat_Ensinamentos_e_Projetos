@@ -1,0 +1,8 @@
+/*
+    # Separando CSS
+
+    não é necessário referenciar um arquivo como .jsx e não é necessário referenciar o arquivo se você referenciar a pasta e ele estiver dentro dela
+
+    colocar na mesma pasta um arquivo css e importar esse arquivo no JSX para que a estilização dessa página jsx ocorra na mesma pasta
+
+*/

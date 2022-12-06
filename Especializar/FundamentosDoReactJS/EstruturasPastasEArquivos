@@ -1,0 +1,7 @@
+/*
+    # Estruturas de Pastas e Arquivos
+
+    Os arquivos .json são responsáveis pelas dependências dos nossos projetos (script de inicialização - dev, build, preview e dependências de desenvolvimento - react, react-dom, vite) 
+    O .gitignore irá deixar como irrelevante pastas e arquivos para não incluir no versionamento do GIT
+    No node modules estão as sub-dependências das dependências
+*/

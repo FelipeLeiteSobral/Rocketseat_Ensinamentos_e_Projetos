@@ -1,0 +1,7 @@
+/*
+    # Use Effect (useEffect)
+
+    É um Hook muito utilizado no React
+
+    O useEffect é executado automaticamente, assim que a página é carregada o useEffect é chamado 
+*/

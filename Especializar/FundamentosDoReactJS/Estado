@@ -1,0 +1,12 @@
+/*
+    # Estado
+
+    Armazenar e recuperar valores do estado
+
+    alterar valores em tempo real
+
+    estados tem dois elementos:
+    primeiro elemento - valor que será alterado/armazenado
+    segundo elemento - função que faz a troca/atualização do elemento
+
+*/

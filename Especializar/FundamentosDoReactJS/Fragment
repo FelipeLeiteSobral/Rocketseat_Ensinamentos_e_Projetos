@@ -1,0 +1,12 @@
+/*
+    # Fragment
+
+    Regra do JSX (quanto as funções)
+    tudo deve estar dentro de um elemento pai (pois o fragmento deve retornar apenas 1 elemento)
+
+    <>
+    </>
+
+    pode ser uma div
+
+*/

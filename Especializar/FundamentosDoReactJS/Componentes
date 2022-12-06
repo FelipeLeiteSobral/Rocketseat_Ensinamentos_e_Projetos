@@ -1,0 +1,6 @@
+/*
+    # Componentes
+
+    React é baseado em componentização para poder reaplicar o mesmo estilo e funcionalidade em ambientes diferentes de nossa aplicação
+    Podemos reutiliza-los e coloca-los em diferente situações
+*/

@@ -1,0 +1,11 @@
+/*
+    # Estrutura React
+
+    HTML com uma div(root)
+
+    essa root trás o conteúdo para o html
+
+    o script trás ao arquivo main.jsx e nela é manipulada/renderizada a DOM
+    Com a manipulação ele renderiza o "<App/>" e esse conteúdo presente nele é direcionada para div(root)
+    o <App/> é importado por App.jsx que é onde está a informação HTML
+*/

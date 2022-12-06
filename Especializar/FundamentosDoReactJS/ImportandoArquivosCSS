@@ -1,0 +1,16 @@
+/*
+    # Importando arquivos CSS
+
+    dentro da pasta src criar uma pasta styles com um arquivo global
+
+    src/styles/global.css
+
+    resetar informações de tela
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+*/

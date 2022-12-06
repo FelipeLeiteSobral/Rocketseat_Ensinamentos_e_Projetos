@@ -1,0 +1,11 @@
+/*
+    # Hooks
+    
+    useState é um Hook
+
+    Hook tem um padrão que se inicia com "useFunção"
+    São funções que permite conectar estados e ciclos de vida do React a partir de componentes funcionais
+    
+    No React tudo é função
+
+*/

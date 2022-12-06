@@ -1,0 +1,16 @@
+/*
+    # Propriedades
+
+    Definir propriedades para seus componentes e eles se tornarem dinâmicos (editáveis)
+
+    props
+
+    const  Card = (props) => {
+  return (
+    <div className="card"> 
+        <strong>{props.name}</strong>
+        <small>{props.time}</small>
+    </div>
+  )
+}
+*/

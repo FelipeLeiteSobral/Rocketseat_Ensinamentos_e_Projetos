@@ -1,0 +1,8 @@
+/*
+    # JSX
+
+    Arquivos JSX
+    É uma forma declarativa de se trazer interfaces pelo React
+    
+    o React é totalmente Javascript, porém para trazer o html terá que inserir uma função onde nessa função estará dentro dela um componente React e dentro desse componente React terá um conteúdo HTML
+*/
