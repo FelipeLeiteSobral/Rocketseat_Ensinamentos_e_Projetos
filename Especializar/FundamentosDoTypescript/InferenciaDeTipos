@@ -1,0 +1,7 @@
+/*
+    # Inferência de Tipos
+
+    Ao dar um valor específico de uma variável ja na declaração, elá se implicitamente atribuirá a variável a tipagem, não podendo posteriormente alterar seu tipo
+
+    Assim o typescript infere automaticamente o tipo do valor atribuído a aquela variável.
+*/

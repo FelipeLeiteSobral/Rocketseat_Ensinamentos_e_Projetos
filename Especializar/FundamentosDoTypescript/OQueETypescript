@@ -1,0 +1,14 @@
+/*
+    # Typescript
+
+    Criado pela Miscrosoft com o objetivo de trazer tipagens para o javascript
+    
+    No Javascript os erros aparecem após a execução da aplicação
+    Já no typescript será mais facilmente corrigido pois há uma nitidez durante a construção do código
+    
+    Ajuda no trabalho em equipe, para visualização de parâmetros, conteúdo de variável, informações e propriedades que um objeto precisa... etc
+
+    No final das contas o typescript compila em javascript numa versão compatível
+
+    não é necessário typar tudo
+*/

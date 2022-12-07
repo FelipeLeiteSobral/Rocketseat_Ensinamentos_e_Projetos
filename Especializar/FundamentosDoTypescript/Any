@@ -1,0 +1,10 @@
+/*
+    # Any
+
+    Por padrão, no typescript uma variável é do tipo ANY quando você não declara ela
+
+    Podendo assim atribuir a essa variável qualquer valor
+
+    Porém, evite usar o any
+
+*/
