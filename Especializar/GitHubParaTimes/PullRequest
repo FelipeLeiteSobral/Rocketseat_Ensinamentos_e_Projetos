@@ -1,0 +1,18 @@
+/*
+    # Pull Request
+
+    O pull request será acessível nas abas do github
+    Terá o nome do pull request, o número de commits, de que branch está sendo feito o merge e para qual branch irá sobrescrever esse merge
+    
+    Na aba de commits você poderá ver as alterações feitas em detrimento a branch que irá ser mergiada
+
+    Na aba de files changed você encontrará todas as alterações realizadas (Aqui você pode fazer comentários no código, servindo eles para a review ou não)
+
+    No botão FINISH YOUR REVIEW você terá a opção de Comment/approve/RequestChanges e então fazer o submit
+
+
+    outdates significa que é algo antigo
+
+    só então quando aprovado que você tem a opção de fazer o merge no final do pull request
+
+*/

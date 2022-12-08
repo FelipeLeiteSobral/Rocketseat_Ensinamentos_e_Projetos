@@ -1,0 +1,17 @@
+/*
+    # Atualizando as Branches
+
+    Para encontrar branches não feitas por voce:
+
+    git branch -a 
+
+    para trazer essas branches para seu computador você deve fazer um:
+
+    git fetch                        => esse comando irá apenas fazer com que elas fiquem acessíveis a você, voce poderá navegar entre essas branches com checkout
+
+    Para apagar da sua máquina as branches que não mais existem no GitHub bastar utilizar o comando:
+
+    git fetch -p
+
+    Caso você tenha baixado a branch para sua máquina (ter dado o checkout para ela) e você queira apagar ela, será feito pelo git branch -d (BranchQueDesejaApagar)
+*/

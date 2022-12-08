@@ -1,0 +1,18 @@
+/*
+    # Configuração de branch padrão e proteção da main
+
+    Evitar que uma branch sobrescreva a main sem querer(com erros/bugs/atualizações indesejadas)
+
+    Para definir requisição para branch basta ir no github e no repositório:
+    settings > branches > Branch protection rule        =>          Nome da Branch que irá receber os parâmetros que desejar
+
+    pull request com merge irá fazer requisições e aprovações antes de se fazer um merge, podendo ser aceito ou declinado, quantas aprovações necessárias para o merge
+
+
+    Informações marcadas normalmente:
+    Pull request
+    Include administrators
+    Allow deletions
+    Require approvals
+
+*/

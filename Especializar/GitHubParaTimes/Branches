@@ -1,0 +1,21 @@
+/*
+    # Branches
+
+    Clonar repositório
+
+    ir em sua pasta onde irá ser clonado o repositório 
+
+    abrir o terminal
+    dar git clone (url)
+
+________________________________________________________________
+
+    git branch irá mostrar a branch onde você está no momento
+    para criar outra branch ou alterar de branch usar:
+    git checkout (nomeDaBranch)         <= para alternar
+    git checkout -b (nomeDaBranch)      <= para criar
+
+
+    main normalmente é onde está o código limpo e funcional, outras branches poderão servir pra debug, atualização, desenvolvimento...etc
+
+*/

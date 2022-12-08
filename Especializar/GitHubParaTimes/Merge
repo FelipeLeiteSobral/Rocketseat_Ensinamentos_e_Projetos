@@ -1,0 +1,10 @@
+/*
+    # Merge
+
+    O merge irá juntar o conteúdo de uma branch para outra
+
+    isso incluirá o histórico de commit's 
+
+    serve normalmente para trazer algo que está funcional e já testado para uma branch hierarquicamente superior
+
+*/

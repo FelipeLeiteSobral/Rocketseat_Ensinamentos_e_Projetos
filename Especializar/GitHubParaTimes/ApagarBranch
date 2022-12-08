@@ -1,0 +1,15 @@
+/*
+    # Apagar uma branch
+
+     git branch -D (branchQueDesejaApagar)
+
+     você somente conseguirá apagar essa branch caso não esteja acessada a ela 
+
+    deletar branch no github:
+
+    lixeirinha nos setting da branch
+
+    ou
+
+    git push origin --delete (branchQueDesejaApagar) 
+*/
