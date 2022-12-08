@@ -1,0 +1,21 @@
+/*
+    # Criando Pull Request
+
+    git push origin (branch)
+
+    pull request > New Pull Request
+
+    base: branch que receberá o conteúdo
+    compare: branch que enviará o conteúdo
+
+    > Create pull request
+
+    comentário explicativo falando o que você fez no código pro pull request
+
+    labels => tipo de alteração (question, invalid, wantfix, enhancement, help wanted...)
+
+    caso esteja ultrapassado o pull request(voce tenha feito um commit após esse pedido de request), você pode editar o comentário do pull request
+
+    Delete branch (voce pode restaurar a branch posteriormente caso necessite dela)
+
+*/

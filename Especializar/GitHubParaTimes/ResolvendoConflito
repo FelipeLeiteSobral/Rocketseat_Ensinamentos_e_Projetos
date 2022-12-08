@@ -6,4 +6,5 @@
     Quando há um conflito terá o Current Change que é o que você fez e está na sua máquina
     já o Incoming change é o que foi importado após o git pull
 
+    Quando você criar uma branch repare em que branch está no momento pois ele pegará o conteúdo a partir dessa branch
 */
