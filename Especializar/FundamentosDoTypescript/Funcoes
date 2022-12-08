@@ -1,0 +1,14 @@
+/*
+    # Funções	
+
+    uma função pode ou não ter um retorno (return)
+
+    quando ela não tem return a tipagem da função é dada como VOID
+
+function showMessages(message:string):void {
+    console.log (message);
+}
+
+    funções podem ser declaradas também, assim como são feitas nas variáveis
+    
+*/

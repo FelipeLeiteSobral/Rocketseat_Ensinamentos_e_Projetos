@@ -1,0 +1,15 @@
+/*
+    # Type Assertions
+
+    Recurso para utilizar quando o typescript não sabe a tipagem da coisa e ai você assegura que a tipagem é essa.
+
+    acontece muito quando há importação de API e o typescript não sabe a tipagem do que foi trazido para o código
+
+type userResponse = {
+    ui: number;
+    name: string;
+    avatar: string;
+}
+let userResponse = {} as UserResponse;
+
+*/

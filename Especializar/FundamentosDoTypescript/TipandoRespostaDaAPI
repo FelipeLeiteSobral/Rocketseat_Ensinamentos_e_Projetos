@@ -1,0 +1,15 @@
+/*
+    # Tipando resposta da API
+
+    Não precisa tipar tuod, somente as informações que você irá usar
+
+    data as (tipagem)
+
+
+const [students, setStudents] = useState<CardProps[]>([]);
+
+
+
+const [user, setUser] = useState<User>({} as User)
+
+*/

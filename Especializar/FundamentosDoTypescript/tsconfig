@@ -1,0 +1,12 @@
+/*
+    #tsconfig
+
+    É um arquivo criado ao utilizar o typescript
+
+    essas configurações vem padronizadas após o npm e você pode alterá-las ao seu gosto
+
+    lang:
+    target:
+    jsx:
+    module:
+*/

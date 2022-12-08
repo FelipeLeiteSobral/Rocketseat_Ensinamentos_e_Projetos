@@ -1,0 +1,19 @@
+/*
+    # Generics
+
+    Convenções de bom uso:
+    * S => state
+    * T => type
+    * K => key
+    * V => value
+    * E => element
+
+<Letra>
+
+    function iseState<T>(){}
+
+    A partir do momento que se declara o tipo, tem que se respeitar esse tipo, não podendo alterá-la depois
+
+    pode organizar um padrão pra caso não seja selecionado, deixando como sempre de um tipo caso a variável, função, array... não seja declarada 
+
+*/

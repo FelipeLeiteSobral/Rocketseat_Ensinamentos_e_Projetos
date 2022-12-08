@@ -1,0 +1,21 @@
+/*
+    # Intersecção de tipos
+
+    Fazer a união de objetos para uma junção de tipos e assim não haver erro
+
+    type Gamer = {
+    id: number;
+    name: string;
+}
+
+type Char = {
+    nickname: string;
+    level: number;
+}
+
+type PlayerInfo = Gamer & Char & {
+    beauty: boolean;
+}
+
+    Dessa forma alguma objeto que adotar o tipo de PlayerInfo terá que ter as informações adotadas por com a intersecção dos tipos
+*/

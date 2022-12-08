@@ -1,0 +1,11 @@
+/*
+    # Tipando Estados
+
+    Usa-se <> para tipar estados
+
+    e caso seja um vetor/array usar os colchetes na tipagem também: 
+
+    Lista<tipo[]>[]
+
+
+*/

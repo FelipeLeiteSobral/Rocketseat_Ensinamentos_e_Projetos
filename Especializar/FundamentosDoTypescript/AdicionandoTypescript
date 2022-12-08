@@ -1,0 +1,12 @@
+/*
+    # Adicionando typescript
+
+    No seu projeto faça a instalação do typescript via npm:
+
+    npm i typescript --save-dev
+
+    após isso devemos criar o arquivo tsconfig.json (ele que trará as configurações do typescript)
+
+    os arquivos em .js ou .jsx devem ser modificados para .ts ou .tsx
+
+*/

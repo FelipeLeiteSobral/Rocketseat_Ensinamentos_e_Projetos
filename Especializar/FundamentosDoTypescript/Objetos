@@ -1,0 +1,16 @@
+/*
+    # Objetos
+
+    Uma tipagem para objeto para cada elemento dentro dele
+
+type Point = {
+    x: number;
+    y: number;
+}
+function printCoord(points: Point){
+    console.log(`O eixo x é ${points.x}`);
+    console.log(`O eixo y é ${points.y}`);
+}
+printCoord({x: 23, y: 25})
+
+*/

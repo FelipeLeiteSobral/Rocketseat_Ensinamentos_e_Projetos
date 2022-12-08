@@ -1,0 +1,13 @@
+/*
+    # Opcional
+
+    coloca-se uma interrogação quando quiser deixar como opcional a o elemento dentro de um objeto ao fazer a inserção desse objeto 
+
+
+    type User = {
+    name: string;
+    email: string;
+    age: number;
+    isAdmin?: boolean;                      <=
+}
+*/
