@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animation</title>
+
+    <style>
+
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+
+            animation-name: example-two; /*Necessário para funcionar a animation*/
+            animation-duration:10s; /*Necessário para funcionar a animation*/
+
+        }
+
+        @keyframes example-one{
+            from{
+                background-color:blueviolet
+            }
+            to{
+                background-color: rosybrown;
+            }
+        } /*Keyframes de um ponto de início para um ponto de final*/
+
+        @keyframes example-two{
+            0%{
+                background-color:blueviolet;
+                left:0;
+                top:0;
+            }
+            25%{
+                background-color:rosybrown;
+                left:600px;
+                top:0;
+            }
+            50%{
+                background-color:blue;
+                left:600px;
+                top:600px;
+            }
+            75%{
+                background-color:greenyellow;
+                left:0px;
+                top:600px;
+            }
+            100%{
+                background-color:yellow;
+                left:0;
+                top:0;
+            }
+        } /*Keyframes específicos durante o tempo de animação*/
+
+    </style>
+
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

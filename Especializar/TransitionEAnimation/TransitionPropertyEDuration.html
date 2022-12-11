@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+
+<style>
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    
+    }
+
+    .box-red {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    .box-red {
+        background-color: red;
+        transition-property:all; /*com property all você não precisa especificar qual elemento quer que tenha efeito*/
+        transition-duration: 2s; /*Para o efeito funcionar mesmo após você ter tirado o mouse(hover na volta), você deve colocar um transition no elemento base */
+    }
+    
+    .box-red:hover {
+        background-color: yellow;
+        transition-property: background-color, width; /*Definir a propriedades que sofreram o efeito*/
+        transition-duration: 2s; /*Duração do efeito*/
+        width: 200px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="box-red"></div>
+</body>
+</html>

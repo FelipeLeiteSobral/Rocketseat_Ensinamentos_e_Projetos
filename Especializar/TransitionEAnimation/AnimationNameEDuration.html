@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animation</title>
+
+    <style>
+
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            background-color: blue;
+            position: relative;
+
+            animation-name: example-one; /*Necessário para funcionar a animation*/
+            animation-duration:4s; /*Necessário para funcionar a animation*/
+
+        }
+
+        @keyframes example-one{
+            from{
+                background-color:blueviolet
+            }
+            to{
+                background-color: rosybrown;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

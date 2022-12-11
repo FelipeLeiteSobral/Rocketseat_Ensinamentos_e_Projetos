@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+
+<style>
+
+    body {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .box-red, .box-green, .box-blue, .box-yellow {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    .box-red {
+        background-color:red;
+        transition: background-color 1s ease 2s;
+    }
+
+    .box-red:hover{
+        background-color:yellow;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        transition-delay: 1s;
+    }
+
+    .box-green{
+        background-color: green;
+        transition: all 1s linear 2s;
+    }
+
+    .box-green:hover{
+        background-color:pink;
+        width: 300px;
+        height: 300px;
+        transition: all 1s cubic-bezier(0.125, 0.94, 0.84, 1);
+        border-radius: 8px;
+    }
+    
+    .box-blue{
+        background-color: blue;
+        transition: all 1s linear 1s;
+    }
+
+    .box-blue:hover{
+        background-color:pink;
+        width: 200px;
+        transition: width 1s ease 0s;
+    }
+    
+    .box-yellow{
+        background-color: yellow;
+        transition: all 0.5s linear 0.2s;
+    }
+
+    .box-yellow:hover{
+        opacity: 0;
+        transition: opacity 1.5s ease 0s;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="box-red"></div>
+    <div class="box-green"></div>
+    <div class="box-blue"></div>
+    <div class="box-yellow"></div>
+
+</body>
+</html>
