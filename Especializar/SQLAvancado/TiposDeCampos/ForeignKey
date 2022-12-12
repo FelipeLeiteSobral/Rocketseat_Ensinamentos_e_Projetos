@@ -1,0 +1,26 @@
+/*
+    #Foreign Key
+
+    Uma nova cabeça de duas tabelas/relação que serve para fazer a ligação entre elas 
+
+    id, id_user, matrícula, numero_de_usuário...
+
+        Tabela: Perfil
+
+    Nome: TEXT
+    Nome de usuário: TEXT
+    Descrição: TEXT
+    Telefone: NUMBER
+    id_user: NUMBER PRIMARY KEY
+    
+        Tabelas: Posts
+
+    id_post: NUMBER PRIMARY KEY
+    post: TEXT
+    video: TEXT
+    data: DATATIME
+    id_user: NUMBER FOREIGN KEY(perfil)
+
+    primary key nunca se repete, enquanto a primary key pode se repetir
+
+*/

@@ -1,0 +1,10 @@
+/*
+    # GROUP BY
+
+    Ele fará com que os itens que possuam o mesmo valor em uma determinada chave se agrupe
+
+    	SELECT id_departamento, COUNT(id_departamento) 
+        FROM funcionarios
+        GROUP BY id_departamento 
+
+*/

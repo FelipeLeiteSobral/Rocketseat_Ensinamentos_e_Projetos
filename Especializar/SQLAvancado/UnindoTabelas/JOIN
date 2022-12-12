@@ -1,0 +1,12 @@
+/*
+    # JOIN
+    
+    Serve para trazer o conteúdo de duas tabelas que possui um relacionamento
+
+
+    SELECT * FROM funcionarios 
+    JOIN departamentos
+    ON departamentos.id_dept = funcionarios.id_departamento 
+
+    Mostra a relação das duas tabelas
+*/

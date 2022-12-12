@@ -1,0 +1,14 @@
+/*
+    # Unique
+
+    faz com que uma chave não possa repetir de valor
+
+    para isso cola-se na frente a palavra Unique
+
+    TEXT UNIQUE
+    NUMBER UNIQUE
+
+    por exemplo: nome de usuário, nickname, email, cpf...   
+    
+
+*/

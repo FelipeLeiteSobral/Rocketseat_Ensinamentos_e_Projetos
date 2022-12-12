@@ -1,0 +1,14 @@
+/*
+    #ORDER BY
+
+    Irá organizar sequencialmente/crescente (ordem numérica ou alfabética)
+
+    SELECT * FROM professor
+    ORDER BY nome  
+
+    Decrescente:
+
+    SELECT * FROM professor
+    ORDER BY nome DESC 
+
+*/

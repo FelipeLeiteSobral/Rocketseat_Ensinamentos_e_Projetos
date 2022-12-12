@@ -1,0 +1,8 @@
+/*
+    # LIMIT
+
+    Estabelece um limite de resultados que você queira que apareça na tabela
+
+    SELECT * FROM aluno LIMIT 2
+
+*/

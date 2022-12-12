@@ -1,0 +1,25 @@
+/*
+    # Exemplo Escola
+
+        Banco de dados: (Escola guerreiros do amanhã)
+
+        Tabela 1: (Matrícula) / (Nome) / (CPF) / (Responsável)
+                    0101 / Jakeliny Gracielly / 123456789 / Josefina Gracielly
+                    0202 / Mariano Garcia / 456123789 / Marcio Garcia
+                    0102 / Joao Castro / 987654321 / José Castro
+        Tabela 2: (id_professor) / (Nome) / (CPF) / (materia)
+                    01 / Mayk Brito / 451278369 / Javascript
+                    02 / Josefina Gracielly / 8877445511 / NodeJS
+                    03 / Olavo Silva / 123654789 / Banco de dados
+
+                    Relação ALUNO X PROFESSOR (Relacionar os números únicos entre si)
+
+        
+        Organização Sistêmica
+
+        Tabela 3: (id_professor) / (id_aluno)
+                    01 / 0101
+                    01 / 0202
+                    01 / 0102
+
+*/

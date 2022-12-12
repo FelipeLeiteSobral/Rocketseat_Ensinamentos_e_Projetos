@@ -1,0 +1,10 @@
+/*
+    # COUNT
+
+    Irá fazer a contagem de itens daquela tabela na chave especificada, no caso abaixo foi NOME
+
+    SELECT COUNT(nome) FROM funcionarios
+
+    10 itens
+
+*/

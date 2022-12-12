@@ -1,0 +1,11 @@
+/*
+    # JOIN / GROUP BY / COUNT (juntos)
+
+    Fazer agrupamento de itens, contar quanto tem em cada departamento tendo uma relação entre 2 tabelas
+    
+    	SELECT departamentos.descricao, COUNT(funcionarios.id_departamento) 
+        FROM funcionarios
+        JOIN departamentos
+        ON funcionarios.id_departamento = departamentos.id_dept 
+        GROUP BY departamentos.id_dept 
+*/

@@ -1,0 +1,14 @@
+/*
+    # Alias
+
+    Altera apenas a visualização da tabela, fica mais fácil para abreviar grandes nomes e entendimento do código
+
+    SELECT func.nome as "Nome", func.cpf as "CPF", dept.descricao as "Departamento"
+    FROM funcionarios as func
+    JOIN departamentos as dept
+    ON dept.id_dept = func.id_departamento 
+
+    as (sem aspas): irá facilitar nesse código sua agilidade diminuindo/abreviando variáveis/tabelas/etc
+    as (com aspas): irá atualizar na tabela para visualização aquele campo em especifico
+
+*/

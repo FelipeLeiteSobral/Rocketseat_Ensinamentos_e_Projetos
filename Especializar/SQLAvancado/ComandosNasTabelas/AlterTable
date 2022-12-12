@@ -1,0 +1,14 @@
+/*
+    # ALTER TABLE
+
+    Alterar informações da tabela
+
+        - Renomear tabela:
+
+    ALTER TABLE aluno RENAME TO alunos 
+
+        - Renomear key da tabela:
+        
+    ALTER TABLE aulas RENAME COLUMN id_aluno TO matricula_aluno
+
+*/

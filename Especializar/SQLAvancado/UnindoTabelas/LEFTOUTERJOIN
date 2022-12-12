@@ -1,0 +1,23 @@
+/*
+    # LEFT OUTER JOIN
+
+    Prioriza a tabela da esquerda/cima
+    campos que não possuem conexão nas tabelas apareçam
+
+
+    SELECT * FROM funcionarios as func
+    LEFT OUTER JOIN departamentos as dept
+    ON dept.id_dept = func.id_departamento 
+
+
+    Nesse caso aparecerá todas as informações da tabela funcionarios que não tiverem relação com a tabela departamentos
+    Caso quisesse que aparecesse as informações extras de departamento deveria ser o seguinte código:
+
+
+    SELECT * FROM departamentos as dept
+    LEFT OUTER JOIN funcionarios as func
+    ON dept.id_dept = func.id_departamento 
+
+
+
+*/

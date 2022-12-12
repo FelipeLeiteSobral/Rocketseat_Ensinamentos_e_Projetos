@@ -1,0 +1,12 @@
+/*
+    # DROP TABLE
+
+    Serve para apagar as tabelas
+
+    DROP TABLE alunos
+    
+    DROP TABLE aulas
+
+    DROP TABLE professores
+
+*/

@@ -1,0 +1,44 @@
+/*
+    # CREATE TABLE
+
+    Criando Tabela diretamente pelo código
+
+    Para configurar a tabela devemos colocar ao lado das chaves seus tipos
+
+    CREATE TABLE alunos (
+    matricula INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT,
+    cpf INTEGER UNIQUE,
+    responsavel TEXT
+    )
+
+    Number = INTEGER (inteiro)
+    Texto = TEXT
+    Único = UNIQUE
+    Chave primária = PRIMARY KEY
+    Adição automática = AUTOINCREMENT
+
+ ________________________________________________________________
+
+    CREATE TABLE alunos (
+    matricula INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT,
+    cpf INTEGER UNIQUE,
+    responsavel TEXT
+    )
+
+    CREATE TABLE professores (
+    id_profesor INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT,
+    cpf INTEGER UNIQUE,
+    materia TEXT
+    )
+
+    CREATE TABLE aulas (
+    id_professor INTEGER,
+    matricula INTEGER,
+    FOREIGN KEY (id_professor) REFERENCES professores (id_professor),
+    FOREIGN KEY (matricula) REFERENCES alunos(matricula)
+    )
+
+*/

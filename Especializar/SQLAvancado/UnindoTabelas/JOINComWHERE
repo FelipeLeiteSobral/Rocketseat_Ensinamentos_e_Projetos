@@ -1,0 +1,15 @@
+/*
+    # JOIN Com WHERE
+
+    Essa ação funcionará para as duas tabelas
+    ela selecionará a especificação que você fizer com o WHERE
+    
+
+    SELECT * FROM funcionarios 
+    JOIN departamentos
+    ON departamentos.id_dept = funcionarios.id_departamento 
+    WHERE funcionarios.id_dept = 2
+
+    mostrará tudo referente ao departamento com id de número 2(que é o departamento de ti no exemplo)
+
+*/

@@ -1,0 +1,9 @@
+/*
+    # Relações entre tabelas
+
+    terá que ter nas duas tabelas um ponto em comum que irá ser pivô da relação
+    Como por exemplo um ID, Nome de usuário, matrícula, etc (esse valor deve ser único)
+
+
+
+*/

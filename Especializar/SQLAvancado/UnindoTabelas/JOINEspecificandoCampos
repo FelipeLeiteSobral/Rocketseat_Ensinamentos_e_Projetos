@@ -1,0 +1,11 @@
+/*
+    # JOIN Especificando campos
+
+    SELECT funcionarios.nome, funcionarios.cpf , departamentos.descricao
+    FROM funcionarios 
+    JOIN departamentos
+    ON departamentos.id_dept = funcionarios.id_departamento 
+    
+    Selecionando a tabela com os campos desejados a serem mostrados
+
+*/

@@ -1,0 +1,9 @@
+/*
+    # OFFSET
+
+    Irá desconsiderar/ignorar uma quantidade X que você determinará para os primeiros valores da tabela
+
+    	SELECT * FROM funcionarios 
+	    LIMIT 4 OFFSET 2
+
+*/
