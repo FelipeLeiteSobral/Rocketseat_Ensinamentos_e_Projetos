@@ -1,0 +1,24 @@
+/*
+    # User Effect Async
+    
+    Diferentemente das funções, o useEffect não pode vir após um Async
+    
+    para usá-la de maneira assíncrona deve fazer assim:
+
+
+    useEffect(() => {
+  async function fetchData(){
+    const response = await fetch("https://api.github.com/users/felipeleitesobral")
+    const data = await response.json();
+      setUser({
+        name: data.name,
+        avatars: data.avatar_url,
+      });
+  }
+
+  fetchData();
+  
+}, []);
+
+    Será criando uma função dentro do useEffect onde nessa função interna você colocará o async e o await
+*/
