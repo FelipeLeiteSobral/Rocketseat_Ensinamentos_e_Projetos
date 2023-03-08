@@ -35,7 +35,8 @@ function App() {
       ],
       publishedAt:new Date("2022-05-10 20:00:00")
     }
-  ]
+  ];
+
   return (
     <div>
       <Header/>
@@ -45,6 +46,7 @@ function App() {
           {posts.map(post =>{
             return (
               <Post 
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
