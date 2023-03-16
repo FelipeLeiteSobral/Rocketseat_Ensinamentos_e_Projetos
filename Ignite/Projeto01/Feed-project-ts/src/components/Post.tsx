@@ -18,7 +18,7 @@ type Content = {
 }
 
 type PostProps = {
-    post: PostType;
+    post: PostType; 
 }
 
 export type PostType = {
@@ -32,7 +32,7 @@ export const Post = ({post}:PostProps) => {
     const publishedDateFormatted =  format(post.publishedAt, "d 'de' LLLL 'às' HH':'mm'h'", {locale:ptBR})
     const publishedDateRelativeToNow = formatDistanceToNow(post.publishedAt, {locale:ptBR, addSuffix: true})
     
-    const [comments, setComments] = useState(["Post muit massa, hein?!"])
+    const [comments, setComments] = useState(["Post muito massa, hein?!"])
     const [newCommentText, setNewCommentText] = useState("")
 
     const isNewCommentEmpty = newCommentText.length === 0;
