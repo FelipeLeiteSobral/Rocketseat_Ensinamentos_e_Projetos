@@ -1,34 +1,72 @@
-import { Play } from 'phosphor-react'
-import React from 'react'
-import { CountdownContainer, FormContainer, HomeContainer, MinutesAmountInput, Separator, StartCountdownButton, TaskInput } from './styles'
+import { HandPalm, Play } from 'phosphor-react'
+import { useForm, FormProvider } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as zod from "zod"
+import { useContext } from 'react'
 
+import { 
+  HomeContainer, 
+  StartCountdownButton, 
+  StopCountdownButton
+} from './styles'
+import { NewCycleForm } from './components/NewCycleForm'
+import { Countdown } from './components/Countdown'
+import { ContextCycles } from '../../contexts/ContextCycles'
+
+
+
+
+type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
+
+const newCycleFormValidationSchema = zod.object({
+  task: zod.string().min(1,"Informe a tarefa"),
+  minutesAmount: zod
+    .number()
+    .min(1, "O ciclo precisa ser de no mínimo 5 minutos")
+    .max(60, "O ciclo precisa de no máximo 60 minutos"),
+})
 
 export const Home = () => {
+  
+  const { activeCycle, createNewCycle, interruptCurrentCycle } = useContext(ContextCycles)
+
+    const newCycleForm = useForm<NewCycleFormData>({
+      resolver: zodResolver(newCycleFormValidationSchema),
+      defaultValues:{
+        task: "",
+        minutesAmount: 0, 
+      }
+    })
+
+  const {handleSubmit, watch, reset} = newCycleForm
+    
+  function handleCreateNewCycle(data: NewCycleFormData){
+    createNewCycle(data)
+    reset()
+  } 
+ 
+
+
+
+  const task = watch("task")
+  const isSubmitDisabled = !task
+  
   return (
+   
     <HomeContainer>
-        <form action="">
-          <FormContainer>
-            <label htmlFor="task">Vou trabalhar em:</label>
-            <TaskInput placeholder='Dê um nome para o seu projeto' list="task-suggestions" id='task' type="text"/>
-            <datalist id='task-suggestions'>
-              <option value="Projeto 1"></option>
-              <option value="Projeto 2"></option>
-              <option value="Projeto 3"></option>
-              <option value="banana"></option>           
-            </datalist>
-            <label htmlFor="minutesAmount">durante:</label>
-            <MinutesAmountInput id="minutesAmount" step={5} min={5} max={60} type="number" placeholder='00' />
-            <span>minutos.</span>
-          </FormContainer>
-          <CountdownContainer>
-            <span>0</span>
-            <span>0</span>
-            <Separator>:</Separator>
-            <span>0</span>
-            <span>0</span>
-          </CountdownContainer>
-          <StartCountdownButton disabled type='submit'><Play size={24}/> Começar </StartCountdownButton>
+        <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
+          <FormProvider {...newCycleForm}>
+            <NewCycleForm/>
+          </FormProvider>
+          <Countdown/>
+
+          {activeCycle ? (
+            <StopCountdownButton onClick={interruptCurrentCycle} type='button'><HandPalm size={24}/> Interromper </StopCountdownButton>
+          ) : (
+            <StartCountdownButton disabled={isSubmitDisabled} type='submit'><Play size={24}/> Começar </StartCountdownButton>
+            )}
         </form>
     </HomeContainer>
+  
   )
 }
