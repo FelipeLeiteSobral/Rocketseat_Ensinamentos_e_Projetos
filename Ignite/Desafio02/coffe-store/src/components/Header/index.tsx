@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
-    <header>
-      <img src="../../../src/assets/Logo.svg" alt="" />
+    <header className="px-160 py-32">
+      <img src="../../../src/assets/Logo.svg" className="" alt="" />
     </header>
   )
 }

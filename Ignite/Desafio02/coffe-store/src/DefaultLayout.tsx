@@ -4,7 +4,7 @@ import { Header } from './components/Header'
 export const DefaultLayout = () => {
   return (
     <div className='h-full w-full bg-yellow'>
-        hi
+      Default Layout
         <Header/>
         <Outlet/>
     </div>

@@ -12,9 +12,9 @@ function Router() {
       <Routes>
         <Route path="/" element={<DefaultLayout/>}/>
           <Route path="/" element={<Home/>}/>
-          <Route path="/" element={<Checkout/>}/>
-          <Route path="/" element={<CheckoutFilled/>}/>
-          <Route path="/" element={<Success/>}/>
+          <Route path="/checkout" element={<Checkout/>}/>
+          <Route path="/checkoutFilled" element={<CheckoutFilled/>}/>
+          <Route path="/success" element={<Success/>}/>
         <Route/>
       </Routes>
     </BrowserRouter>
