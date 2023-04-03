@@ -32,13 +32,14 @@ function App() {
   }
 
   function completedTask(taskIdCompleted:string){
-    const taskCompleted = tasks.filter(task => {
+    const taskCompleted = tasks.map(task => {
       if (task.id !== taskIdCompleted){
         return task;
       }
       else{
         return {
-          ...task, isFinished: !task.isFinished
+          ...task, 
+          isFinished: !task.isFinished
         }
       }
     })

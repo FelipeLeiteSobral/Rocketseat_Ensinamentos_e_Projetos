@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react'
+import { useState, ChangeEvent, FormEvent } from 'react'
 
 type TaskCreatorProps = {
     handleAddTask : (taskDescription:string) => void,

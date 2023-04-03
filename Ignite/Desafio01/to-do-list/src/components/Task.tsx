@@ -13,11 +13,9 @@ export const Task = ({id, description, isFinished, onDeleteTask, onCompletedTask
     const [boxChecked, setBoxChecked] = useState(false)
     
     function handleBoxChange(){
-    setBoxChecked(boxChecked ? false : true)
-    isFinished = true
-    //    console.log(isFinished)
-
+    setBoxChecked(boxChecked ? false : true)    
     onCompletedTask(id)
+    return isFinished = !isFinished
     }
     
     function handleDeleteTask(){
