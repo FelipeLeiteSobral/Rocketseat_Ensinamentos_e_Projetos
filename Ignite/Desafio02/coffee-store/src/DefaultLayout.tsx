@@ -1,12 +1,12 @@
-import { Outlet} from 'react-router-dom'
+import React from 'react'
 import { Header } from './components/Header'
+import { Outlet } from 'react-router'
 
 export const DefaultLayout = () => {
   return (
-    <div className='h-full w-full bg-yellow'>
-      Default Layout
+    <>
         <Header/>
         <Outlet/>
-    </div>
+    </>
   )
 }
