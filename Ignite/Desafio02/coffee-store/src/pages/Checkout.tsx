@@ -20,16 +20,16 @@ export const Checkout = () => {
             </div>
           </div>
           <div className='flex flex-col gap-4'>
-            <Input/>
-            <Input/>
+            <Input tipo="CEP"/>
+            <Input tipo="Rua"/>
             <div className='flex gap-3'>
-              <Input/>
-              <Input/>
+              <Input tipo="Numero"/>
+              <Input tipo="Complemento"/>
             </div>
             <div className='flex gap-3'>
-              <Input/>
-              <Input/>
-              <Input/>
+              <Input tipo="Bairro"/>
+              <Input tipo="Cidade"/>
+              <Input tipo="UF"/>
             </div>
           </div>
         </div>
@@ -67,18 +67,18 @@ export const Checkout = () => {
             </div>
             <div className='w-full h-0 border-[1px] border-base-button mt-6'></div>
           </div>
-          <div className='flex-col gap-3'>
-            <div className='flex justify-between'>
-              <strong>Total itens</strong>
-              <p>R$ 29,70</p>
+          <div className='flex flex-col gap-3 '>
+            <div className='flex justify-between text-[14px] text-base-text leading-[18px]'>
+              <p className='text-[14px] text-base-text'>Total itens</p>
+              <p className='text-[16px]'>R$ 29,70</p>
             </div>
-            <div className='flex justify-between'>
-              <strong>Entrega</strong>
-              <p>R$ 3,50</p>
+            <div className='flex justify-between text-[14px] text-base-text leading-[18px]'>
+              <p>Entrega</p>
+              <p className='text-[16px]'>R$ 3,50</p>
             </div>
-            <div className='flex justify-between'>
-              <strong>Total</strong>
-              <p>R$ 33,20</p>
+            <div className='flex justify-between text-[20px] font-[700] text-base-subtitle leading-[26px]'>
+              <p>Total</p>
+              <p className='text-[16px]'>R$ 33,20</p>
             </div>
             <div className='pt-3'>
               <Button/>
