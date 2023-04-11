@@ -1,6 +1,7 @@
 import React from 'react'
 import { ShoppingCart, Package, Timer, Coffee  } from '@phosphor-icons/react'
-import { CardProduct } from '../components/Card/CardProduct'
+import { CardProduct, CardProductProps } from '../components/Card/CardProduct'
+import { dataCoffee } from "../../src/data/data"
 
 export const Home = () => {
   return (
@@ -22,11 +23,10 @@ export const Home = () => {
       </div>
       <div className='flex flex-col'>
         <h2 className='font-baloo text-[42px] font-[800] text-base-subtitle leading-[41.6px] py-14'>Nossos cafés</h2>
-        <div className='flex flex-wrap gap-8 justify-center'>
-          <CardProduct/>
-          <CardProduct/>
-          <CardProduct/>
-          <CardProduct/>
+        <div className='flex flex-wrap gap-8 pb-8 w-full'>
+          {dataCoffee.map((data:any) => (
+              <CardProduct key={data.id} id={data.id} coffee={data.coffee} imgCoffee={data.imgCoffee} value={data.value} typeTags={data.typeTags} description={data.description}/>
+          ))}
         </div>
       </div>
     </div>
