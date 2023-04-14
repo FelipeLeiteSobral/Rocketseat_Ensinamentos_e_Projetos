@@ -60,7 +60,7 @@ export const Checkout = () => {
                   <strong className='flex gap-1 text-base-text font-[700] text-[16px]'>R$ <p>9,90</p></strong>
                 </div>
                 <div className='flex gap-2'>
-                  <ButtonSelectQuantity/>
+                  <ButtonSelectQuantity productId={""}/>
                   <ButtonRemove/>
                 </div>
               </div>

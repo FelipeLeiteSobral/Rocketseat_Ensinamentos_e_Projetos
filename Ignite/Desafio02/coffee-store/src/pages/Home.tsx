@@ -1,9 +1,12 @@
 import React from 'react'
 import { ShoppingCart, Package, Timer, Coffee  } from '@phosphor-icons/react'
 import { CardProduct, CardProductProps } from '../components/Card/CardProduct'
-import { dataCoffee } from "../../src/data/data"
+import {DataCoffeeProps, useStateContext} from "../context/StateContext"
 
 export const Home = () => {
+
+  const {dataCoffee} = useStateContext()
+
   return (
     <div className='px-40 font-roboto font-[400]'>
       <div className='flex flex-wrap justify-between py-24 gap-14'>
@@ -24,7 +27,7 @@ export const Home = () => {
       <div className='flex flex-col'>
         <h2 className='font-baloo text-[42px] font-[800] text-base-subtitle leading-[41.6px] py-14'>Nossos cafés</h2>
         <div className='flex flex-wrap gap-8 pb-8 w-full'>
-          {dataCoffee.map((data:any) => (
+          {dataCoffee.map((data: DataCoffeeProps) => (
               <CardProduct key={data.id} id={data.id} coffee={data.coffee} imgCoffee={data.imgCoffee} value={data.value} typeTags={data.typeTags} description={data.description}/>
           ))}
         </div>

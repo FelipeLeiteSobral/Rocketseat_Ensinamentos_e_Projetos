@@ -1,16 +1,49 @@
 import React from 'react'
 import {Plus, Minus} from "@phosphor-icons/react"
+import { DataCoffeeProps, useStateContext } from '../../context/StateContext'
+import { data } from '../../data/data'
 
-export const ButtonSelectQuantity = () => {
+type ButtonSelectQuantityProps = {
+  productId: string
+}
+
+export const ButtonSelectQuantity = ({productId} : ButtonSelectQuantityProps) => {
+  const {dataCoffee, setDataCoffee, quantityToBuy, setQuantityToBuy} = useStateContext()
+
+
+  function increaseQuantity() {
+    setDataCoffee(dataCoffee.map((product) => {
+      if (product.id !== productId) {
+        return product
+      }
+      else {
+        return {...product, quantityToAddOnCart: product.quantityToAddOnCart + 1}
+      }
+    }))
+  }
+  
+  function decreaseQuantity() {
+    setDataCoffee(() => {
+        setDataCoffee(dataCoffee.map((product) => {
+        if (product.id !== productId) {
+          return product
+        }
+        else {
+          return {...product, quantityToAddOnCart: product.quantityToAddOnCart <= 1 ?  1 : product.quantityToAddOnCart - 1}
+        }
+      }))}
+    )
+  }
+
   return (
     <button className='bg-base-button flex items-center justify-center p-2 h-8 rounded-[6px] font-roboto font-[400] text-[16px] transition-all ease-in-out duration-200 relative gap-2'>
-        <i>
+        <i onClick={decreaseQuantity}>
             <Minus size={14} className="text-purple hover:text-purple-dark" />
         </i>
         <div className='text-base-title'>
-            3
+            {dataCoffee.find((product : any) => product.id === productId)?.quantityToAddOnCart}
         </div>
-        <i>
+        <i onClick={increaseQuantity}> 
             <Plus size={14} className="text-purple hover:text-purple-dark" />
         </i>
     </button>

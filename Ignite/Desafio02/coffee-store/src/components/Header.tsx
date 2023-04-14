@@ -6,17 +6,20 @@ import { ButtonShoppingCart } from './Button/ButtonShoppingCart'
 import { ButtonSelectQuantity } from './Button/ButtonSelectQuantity'
 import { ButtonCreditCard } from './Button/ButtonCreditCard'
 import { ButtonLocal } from './Button/ButtonLocal'
+import { NavLink } from 'react-router-dom'
 
-import { StateContext } from '../context/StateContext'
 
 export const Header = () => {
-
   return (
     <header className="py-8 px-40 flex justify-between">
-        <img src="../../src/assets/Logo.svg" alt="" />
+        <NavLink to="/">
+          <img src="../../src/assets/Logo.svg" alt="" />
+        </NavLink>
         <div className="flex gap-6 items-center">
             <ButtonLocal/>
-            <ButtonShoppingCart/>
+            <NavLink to="/checkout">
+              <ButtonShoppingCart/>
+            </NavLink>
         </div>
     </header>
   )
