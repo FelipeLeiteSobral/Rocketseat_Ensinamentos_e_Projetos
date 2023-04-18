@@ -2,13 +2,13 @@ import React from "react";
 import { Plus, Minus } from "@phosphor-icons/react";
 import { useStateContext } from "../../context/StateContext";
 
-type ButtonSelectQuantityProps = {
+type ButtonSelectQuantityInCartProps = {
   productId: string;
 };
 
-export const ButtonSelectQuantity = ({
+export const ButtonSelectQuantityInCart = ({
   productId,
-}: ButtonSelectQuantityProps) => {
+}: ButtonSelectQuantityInCartProps) => {
   const { dataCoffee, setDataCoffee } = useStateContext();
 
   function increaseQuantity() {
