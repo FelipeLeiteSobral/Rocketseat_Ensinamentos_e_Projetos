@@ -9,17 +9,17 @@ type ButtonSelectQuantityInCartProps = {
 export const ButtonSelectQuantityInCart = ({
   productId,
 }: ButtonSelectQuantityInCartProps) => {
-  const { dataCoffee, setDataCoffee } = useStateContext();
+  const { itemsOnCart, setItemsOnCart } = useStateContext();
 
   function increaseQuantity() {
-    setDataCoffee(
-      dataCoffee.map((product) => {
+    setItemsOnCart(
+      itemsOnCart.map((product) => {
         if (product.id !== productId) {
           return product;
         } else {
           return {
             ...product,
-            quantityToAddOnCart: product.quantityToAddOnCart + 1,
+            quantityAddOnCart: product.quantityAddOnCart + 1,
           };
         }
       })
@@ -27,23 +27,21 @@ export const ButtonSelectQuantityInCart = ({
   }
 
   function decreaseQuantity() {
-    setDataCoffee(() => {
-      setDataCoffee(
-        dataCoffee.map((product) => {
-          if (product.id !== productId) {
-            return product;
-          } else {
-            return {
-              ...product,
-              quantityToAddOnCart:
-                product.quantityToAddOnCart <= 1
-                  ? 1
-                  : product.quantityToAddOnCart - 1,
-            };
-          }
-        })
-      );
-    });
+    setItemsOnCart(
+      itemsOnCart.map((product) => {
+        if (product.id !== productId) {
+          return product;
+        } else {
+          return {
+            ...product,
+            quantityAddOnCart:
+              product.quantityAddOnCart <= 1
+                ? 1
+                : product.quantityAddOnCart - 1,
+          };
+        }
+      })
+    );
   }
 
   return (
@@ -52,9 +50,8 @@ export const ButtonSelectQuantityInCart = ({
         <Minus size={14} className="text-purple hover:text-purple-dark" />
       </i>
       <div className="text-base-title">
-        {
-          dataCoffee.find((product: any) => product.id === productId)
-            ?.quantityToAddOnCart
+        { 
+          itemsOnCart.find((product: any) => product.id === productId)?.quantityAddOnCart
         }
       </div>
       <i onClick={increaseQuantity}>

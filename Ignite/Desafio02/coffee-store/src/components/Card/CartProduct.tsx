@@ -1,8 +1,7 @@
 import React from "react";
 import { ButtonRemove } from "../Button/ButtonRemove";
-import { ButtonSelectQuantity } from "../Button/ButtonSelectQuantity";
 import { useStateContext } from "../../context/StateContext";
-import { ButtonSelectQuantityInCart } from "../Button/ButtonSelectQunatityInCart";
+import { ButtonSelectQuantityInCart } from "../Button/ButtonSelectQuantityInCart";
 
 type CartProductProps = {
   coffee: string;
@@ -17,7 +16,6 @@ export const CartProduct = ({
   imgCoffee,
   id,
 }: CartProductProps) => {
-  const { dataCoffee } = useStateContext();
   return (
     <div className="flex flex-col gap-2">
       <div className="flex gap-5">

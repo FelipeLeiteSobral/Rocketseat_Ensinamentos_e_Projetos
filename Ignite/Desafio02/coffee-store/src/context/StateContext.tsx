@@ -25,9 +25,6 @@ export type ItemsOnCartProps = {
 };
 
 type typePaymentProps = {
-  cartaoDeCredito: string;
-  cartaoDeDebito: string;
-  dinheiro: string;
   booleanCred: boolean;
   booleanDeb: boolean;
   booleanDin: boolean;
@@ -43,16 +40,26 @@ type ContextType = {
   setDataCoffee: (data: any) => void;
   setQuantityToBuy: (quantity: any) => void;
   setItemsOnCart: (data: any) => void;
+  setQuantityToAddOnCart: (quantity: any) => void
 };
 
 const Context = createContext({} as ContextType);
 
 export const StateContext = ({ children }: any) => {
   const [dataCoffee, setDataCoffee] = useState(dataProducts);
-  const [itemsOnCart, setItemsOnCart] = useState([]);
+  const [itemsOnCart, setItemsOnCart] = useState(StorageData);
   const [quantityToBuy, setQuantityToBuy] = useState(5);
   const [quantityToAddOnCart, setQuantityToAddOnCart] = useState(0);
   const [typePayment, setTypePayment] = useState(dataPayment);
+ 
+  function StorageData() {
+    const receiveLocalStorage = localStorage.getItem('@coffee-shop:cycles-state-1.0.0'); 
+    if (receiveLocalStorage){
+      return JSON.parse(receiveLocalStorage) 
+    }
+    return []
+  }
+
   useEffect(() => {
     const stateJSON = JSON.stringify(itemsOnCart);
     localStorage.setItem("@coffee-shop:cycles-state-1.0.0", stateJSON);
@@ -70,6 +77,7 @@ export const StateContext = ({ children }: any) => {
         setItemsOnCart,
         setQuantityToBuy,
         setTypePayment,
+        setQuantityToAddOnCart
       }}
     >
       {children}

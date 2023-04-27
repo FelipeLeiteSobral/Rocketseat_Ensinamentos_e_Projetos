@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    data: {
+      checked: 'ui~="checked"',
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

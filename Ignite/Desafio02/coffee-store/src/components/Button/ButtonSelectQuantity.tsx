@@ -27,23 +27,21 @@ export const ButtonSelectQuantity = ({
   }
 
   function decreaseQuantity() {
-    setDataCoffee(() => {
-      setDataCoffee(
-        dataCoffee.map((product) => {
-          if (product.id !== productId) {
-            return product;
-          } else {
-            return {
-              ...product,
-              quantityToAddOnCart:
-                product.quantityToAddOnCart <= 1
-                  ? 1
-                  : product.quantityToAddOnCart - 1,
-            };
-          }
-        })
-      );
-    });
+    setDataCoffee(
+      dataCoffee.map((product) => {
+        if (product.id !== productId) {
+          return product;
+        } else {
+          return {
+            ...product,
+            quantityToAddOnCart:
+              product.quantityToAddOnCart <= 1
+                ? 1
+                : product.quantityToAddOnCart - 1,
+          };
+        }
+      })
+    );
   }
 
   return (

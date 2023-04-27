@@ -2,9 +2,10 @@ import React from 'react'
 
 type InputProps = {
   tipo: "CEP" | "Rua" | "Numero" | "Complemento" | "Bairro" | "Cidade" | "UF" 
+  error?: any,
 }
 
-export const Input = ({tipo}:InputProps) => {
+export const Input = ({tipo, error}:InputProps) => {
   return (
     <>
       {(tipo === "CEP") ? (
@@ -33,12 +34,10 @@ export const Input = ({tipo}:InputProps) => {
         ) :
       (tipo === "Cidade") ? (
         <label htmlFor="" className='w-full'>
-            <input type='field' placeholder='Cidade' maxLength={8} className='bg-base-input text-base-label p-3 w-full outline-none rounded-[4px]'/>
         </label>
         ) :
       (tipo === "UF") ? (
         <label htmlFor="">
-            <input type='field' placeholder='UF' maxLength={8} className='bg-base-input text-base-label p-3 min-w-[72px] outline-none rounded-[4px]'/>
         </label>
         ) : (<></>)
       }

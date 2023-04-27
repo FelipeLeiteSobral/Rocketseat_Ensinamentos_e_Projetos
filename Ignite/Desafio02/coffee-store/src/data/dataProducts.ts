@@ -17,7 +17,7 @@ export const dataProducts: DataCoffeeProps[] = [
     coffee: "Árabe",
     description: "Bebida preparada com grãos de café árabe e especiarias",
     imgCoffee: "../../src/assets/Arabe.svg",
-    quantityToAddOnCart: 5,
+    quantityToAddOnCart: 1,
     quantityAddOnCart: 0,
     value: 9.59,
     typeTags: ["Especial"],
