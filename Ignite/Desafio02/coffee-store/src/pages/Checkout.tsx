@@ -1,25 +1,46 @@
 import React, { useState } from "react";
 import { MapPinLine, CurrencyDollar } from "@phosphor-icons/react";
 import { Input } from "../components/Input/Input";
-import { ButtonCreditCard } from "../components/Button/ButtonCreditCard";
 import { Button } from "../components/Button/Button";
+import { ButtonCreditCard } from "../components/Button/ButtonCreditCard";
 import { CartProduct } from "../components/Card/CartProduct";
 import { useStateContext } from "../context/StateContext";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 type CreateUseFormData = z.infer<typeof createUseFormSchema>;
-
 const createUseFormSchema = z.object({
   CEP: z
     .string()
-    .nonempty("Obrigatório o preenchimento do campo 'CEP'")
-    .min(8, "O CEP precisa ter 8 dígitos")
-    .max(8, "O CEP precisa ter 8 dígitos"),
+    .regex(/^\d{8}$/, "Insira apenas números")
+    .transform((val, ctx) => {
+      const parsed = parseInt(val);
+      if (isNaN(parsed)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "Insira um número",
+        });
+        return z.NEVER;
+      }
+      return parsed;
+    }),
   Rua: z.string().nonempty("Obrigatório o preenchimento do campo 'Rua'"),
-  Numero: z.string().nonempty("Obrigatório o preenchimento do campo 'Numero'"), //ONLY NUMBER
+  Numero: z
+    .string()
+    .min(1, "Obrigatório o preenchimento do campo 'Numero'")
+    .transform((val, ctx) => {
+      const parsed = parseInt(val);
+      if (isNaN(parsed)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "Insira um número",
+        });
+        return z.NEVER;
+      }
+      return parsed;
+    }),
   Complemento: z
     .string()
     .nonempty("Obrigatório o preenchimento do campo 'Complemento'"),
@@ -28,12 +49,13 @@ const createUseFormSchema = z.object({
   UF: z
     .string()
     .nonempty("Obrigatório o preenchimento do campo 'UF'")
-    .max(2, "Máximo de 2 dígitos nesse campo"),
+    .min(2, "Esse campo tem que ter 2 dígitos")
+    .max(2, "Esse campo tem que ter 2 dígitos"),
 });
 
 export const Checkout = () => {
   const [output, setOutput] = useState("");
-  const { itemsOnCart, typePayment, setTypePayment } = useStateContext();
+  const { itemsOnCart } = useStateContext();
   const {
     register,
     handleSubmit,
@@ -42,8 +64,8 @@ export const Checkout = () => {
     resolver: zodResolver(createUseFormSchema),
   });
 
-  const navigate = useNavigate()
- 
+  const navigate = useNavigate();
+
   function totalItemsPrice() {
     const priceByItem: number[] = itemsOnCart.map((item) => {
       return item.quantityAddOnCart * item.value;
@@ -62,7 +84,7 @@ export const Checkout = () => {
   function createdOrder(data: any) {
     setOutput(JSON.stringify(data, null, 2));
     console.log(data);
-    navigate("/success")
+    navigate("/success");
   }
 
   const totalItems = totalItemsPrice();
@@ -95,10 +117,12 @@ export const Checkout = () => {
           </div>
           <div className="flex flex-col gap-4">
             <input
-              type="CEP"
+              type="text"
+              max="99999999"
               maxLength={8}
+              inputMode="numeric"
               placeholder="CEP"
-              className="bg-base-input text-base-label p-3 max-w-[200px] outline-none rounded-[4px]"
+              className="bg-base-input text-base-label p-3 max-w-[200px] outline-none rounded-[4px] appearance-none"
               {...register("CEP")}
             />
             {errors.CEP && (
@@ -117,9 +141,10 @@ export const Checkout = () => {
 
             <div className="flex gap-3 items-center">
               <input
-                type="Numero"
+                type="text"
+                minLength={1}
+                inputMode="numeric"
                 placeholder="Numero"
-                maxLength={8}
                 className="bg-base-input text-base-label p-3 max-w-[200px] outline-none rounded-[4px]"
                 {...register("Numero")}
               />
@@ -132,7 +157,6 @@ export const Checkout = () => {
               <input
                 type="Complemento"
                 placeholder="Complemento"
-                maxLength={8}
                 className="bg-base-input text-base-label p-3 w-full outline-none rounded-[4px]"
                 {...register("Complemento")}
               />
@@ -146,7 +170,6 @@ export const Checkout = () => {
               <input
                 type="Bairro"
                 placeholder="Bairro"
-                maxLength={8}
                 className="bg-base-input text-base-label p-3 max-w-[200px] outline-none rounded-[4px]"
                 {...register("Bairro")}
               />
@@ -158,7 +181,6 @@ export const Checkout = () => {
               <input
                 type="Cidade"
                 placeholder="Cidade"
-                maxLength={8}
                 className="bg-base-input text-base-label p-3 w-full outline-none rounded-[4px]"
                 {...register("Cidade")}
               />
@@ -169,8 +191,8 @@ export const Checkout = () => {
               )}
               <input
                 type="UF"
-                placeholder="UF"
                 maxLength={2}
+                placeholder="UF"
                 className="bg-base-input text-base-label p-3 min-w-[72px] outline-none rounded-[4px]"
                 {...register("UF")}
               />
@@ -240,6 +262,11 @@ export const Checkout = () => {
             </div>
             <div className="pt-3">
               <button
+                onClick={() =>
+                  itemsOnCart.map(() => {
+                    return;
+                  })
+                }
                 type="submit"
                 className="bg-yellow hover:bg-yellow-dark text-white min-w-[132px] w-full px-3 py-2 rounded-[6px] items-center justify-center font-roboto font-[700] text-[14px] transition ease-in-out duration-200"
               >

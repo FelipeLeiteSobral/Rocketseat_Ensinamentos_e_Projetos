@@ -45,18 +45,19 @@ export const ButtonSelectQuantityInCart = ({
   }
 
   return (
-    <button className="bg-base-button flex items-center justify-center p-2 h-8 rounded-[6px] font-roboto font-[400] text-[16px] transition-all ease-in-out duration-200 relative gap-2">
+    <div className="bg-base-button flex items-center justify-center p-2 h-8 rounded-[6px] font-roboto font-[400] text-[16px] transition-all ease-in-out duration-200 relative gap-2">
       <i onClick={decreaseQuantity}>
-        <Minus size={14} className="text-purple hover:text-purple-dark" />
+        <Minus size={14} className="text-purple hover:text-purple-dark cursor-pointer" />
       </i>
       <div className="text-base-title">
-        { 
-          itemsOnCart.find((product: any) => product.id === productId)?.quantityAddOnCart
+        {
+          itemsOnCart.find((product: any) => product.id === productId)
+            ?.quantityAddOnCart
         }
       </div>
       <i onClick={increaseQuantity}>
-        <Plus size={14} className="text-purple hover:text-purple-dark" />
+        <Plus size={14} className="text-purple hover:text-purple-dark cursor-pointer" />
       </i>
-    </button>
+    </div>
   );
 };
