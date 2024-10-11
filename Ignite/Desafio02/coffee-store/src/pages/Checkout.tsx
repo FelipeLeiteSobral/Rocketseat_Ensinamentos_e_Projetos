@@ -12,35 +12,20 @@ import { useNavigate } from "react-router-dom";
 
 type CreateUseFormData = z.infer<typeof createUseFormSchema>;
 const createUseFormSchema = z.object({
-  CEP: z
-    .string()
-    .regex(/^\d{8}$/, "Insira apenas números")
-    .transform((val, ctx) => {
-      const parsed = parseInt(val);
-      if (isNaN(parsed)) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          message: "Insira um número",
-        });
-        return z.NEVER;
-      }
-      return parsed;
-    }),
+  CEP: z.number({
+    errorMap: () => {
+      return { message: "Informe um número" };
+    },
+  }),
   Rua: z.string().nonempty("Obrigatório o preenchimento do campo 'Rua'"),
   Numero: z
-    .string()
-    .min(1, "Obrigatório o preenchimento do campo 'Numero'")
-    .transform((val, ctx) => {
-      const parsed = parseInt(val);
-      if (isNaN(parsed)) {
-        ctx.addIssue({
-          code: z.ZodIssueCode.custom,
-          message: "Insira um número",
-        });
-        return z.NEVER;
-      }
-      return parsed;
-    }),
+    .number({
+      errorMap: () => {
+        return { message: "Informe um número" };
+      },
+    })
+    .positive("Informe um número positivo")
+    .min(1, "Obrigatório o preenchimento do campo 'Numero'"),
   Complemento: z
     .string()
     .nonempty("Obrigatório o preenchimento do campo 'Complemento'"),
@@ -54,16 +39,18 @@ const createUseFormSchema = z.object({
 });
 
 export const Checkout = () => {
-  const [output, setOutput] = useState("");
-  const { itemsOnCart } = useStateContext();
+  const { itemsOnCart, setItemsOnCart, setCreateShipment, createShipment } = useStateContext();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<CreateUseFormData>({
+    mode: "all",
+    reValidateMode: "onChange",
     resolver: zodResolver(createUseFormSchema),
   });
 
+  console.log(errors);
   const navigate = useNavigate();
 
   function totalItemsPrice() {
@@ -81,10 +68,18 @@ export const Checkout = () => {
     return soma;
   }
 
+  function reset() {
+    const resetCart = itemsOnCart.filter((item) => {
+      return !item;
+    });
+    setItemsOnCart(resetCart);
+  }
+
   function createdOrder(data: any) {
-    setOutput(JSON.stringify(data, null, 2));
+    setCreateShipment(data);
     console.log(data);
     navigate("/success");
+    reset();
   }
 
   const totalItems = totalItemsPrice();
@@ -117,13 +112,14 @@ export const Checkout = () => {
           </div>
           <div className="flex flex-col gap-4">
             <input
-              type="text"
+              type="number"
               max="99999999"
               maxLength={8}
               inputMode="numeric"
               placeholder="CEP"
               className="bg-base-input text-base-label p-3 max-w-[200px] outline-none rounded-[4px] appearance-none"
-              {...register("CEP")}
+              {...(register("CEP",
+              { setValueAs: (value: string) => parseInt(value, 10) }))}
             />
             {errors.CEP && (
               <span className="text-sm text-red-900">{errors.CEP.message}</span>
@@ -141,12 +137,13 @@ export const Checkout = () => {
 
             <div className="flex gap-3 items-center">
               <input
-                type="text"
+                type="number"
                 minLength={1}
                 inputMode="numeric"
                 placeholder="Numero"
                 className="bg-base-input text-base-label p-3 max-w-[200px] outline-none rounded-[4px]"
-                {...register("Numero")}
+                {...(register("Numero",
+                { setValueAs: (value: string) => parseInt(value, 10) }))}
               />
               {errors.Numero && (
                 <span className="text-sm text-red-900">

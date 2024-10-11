@@ -36,11 +36,22 @@ type ContextType = {
   quantityToAddOnCart: number;
   quantityToBuy: number;
   typePayment: typePaymentProps[];
+  createShipment: createShipmentProps[];
+  setCreateShipment: (data: any) => void;
   setTypePayment: (data: any) => void;
   setDataCoffee: (data: any) => void;
   setQuantityToBuy: (quantity: any) => void;
   setItemsOnCart: (data: any) => void;
-  setQuantityToAddOnCart: (quantity: any) => void
+  setQuantityToAddOnCart: (quantity: any) => void;
+};
+type createShipmentProps = {
+  Bairro: string;
+  CEP: number;
+  Cidade: string;
+  Complemento: string;
+  Numero: number;
+  Rua: string;
+  UF: string;
 };
 
 const Context = createContext({} as ContextType);
@@ -51,13 +62,16 @@ export const StateContext = ({ children }: any) => {
   const [quantityToBuy, setQuantityToBuy] = useState(5);
   const [quantityToAddOnCart, setQuantityToAddOnCart] = useState(0);
   const [typePayment, setTypePayment] = useState(dataPayment);
- 
+  const [createShipment, setCreateShipment] = useState([]);
+
   function StorageData() {
-    const receiveLocalStorage = localStorage.getItem('@coffee-shop:cycles-state-1.0.0'); 
-    if (receiveLocalStorage){
-      return JSON.parse(receiveLocalStorage) 
+    const receiveLocalStorage = localStorage.getItem(
+      "@coffee-shop:cycles-state-1.0.0"
+    );
+    if (receiveLocalStorage) {
+      return JSON.parse(receiveLocalStorage);
     }
-    return []
+    return [];
   }
 
   useEffect(() => {
@@ -73,11 +87,13 @@ export const StateContext = ({ children }: any) => {
         quantityToBuy,
         dataCoffee,
         typePayment,
+        createShipment,
         setDataCoffee,
         setItemsOnCart,
         setQuantityToBuy,
         setTypePayment,
-        setQuantityToAddOnCart
+        setQuantityToAddOnCart,
+        setCreateShipment,
       }}
     >
       {children}
